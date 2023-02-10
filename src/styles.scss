@@ -37,6 +37,13 @@ $ratatouille-theme: mat.define-light-theme((
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import 'aos/dist/aos.css';
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Slub, "Helvetica Neue", sans-serif;}
+@layer base {
+  html{
+    @apply font-slub
+  }
+}
 
