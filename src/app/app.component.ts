@@ -10,6 +10,11 @@ export class AppComponent {
   title = 'ratatouille';
 
   constructor(){
-    Aos.init()
+    Aos.init({
+      offset: 200,
+      duration: 300,
+      easing: 'ease-in-sine',
+      delay: 0,
+    });
   }
 }
