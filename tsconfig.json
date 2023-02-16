@@ -6,6 +6,8 @@
       "swiper_angular": ["node_modules/swiper/angular"]
     },
     "baseUrl": "./",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
