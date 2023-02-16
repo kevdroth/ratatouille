@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Recetas, Producto } from '../interfaces/recetas.interface';
+import { Router } from '@angular/router';
 import { DetalleService } from './service/detalle.service';
 
 @Component({
@@ -8,11 +8,12 @@ import { DetalleService } from './service/detalle.service';
   styleUrls: ['./detalle.component.scss'],
 })
 export class DetalleComponent implements OnInit {
-  @Input() marcaSelect: string = 'oreo';
+
+  @Input() marcaSelect: string = 'terrabusi';
 
   producto!: any[]
 
-  constructor(private detalleService: DetalleService) {}
+  constructor(private detalleService: DetalleService, private router: Router) {}
 
   ngOnInit(): void {
     this.producto = this.detalleService.getProductos(this.marcaSelect);

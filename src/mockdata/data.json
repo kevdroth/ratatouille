@@ -59,5 +59,100 @@
         "foto": "assets/img/oreo/img-ppal21.jpg"
       }
     ]
+  },
+  {
+    "nombre": "milka",
+    "receta": [
+      {
+        "nombre": "Bizcochuelo Royal con crema de Mantecol",
+        "foto": "assets/img/milka/img-ppal2.jpg"
+      },
+      {
+        "nombre": "Budín de Naranja con Mini Oreo y Milka",
+        "foto": "assets/img/milka/img-ppal4.jpg"
+      },
+      {
+        "nombre": "Cheesecake de Milka y Oreo Golden",
+        "foto": "assets/img/milka/img-ppal5.jpg"
+      },
+      {
+        "nombre": "Choco Oreo con Milka Bis Oreo",
+        "foto": "assets/img/milka/img-ppal8.jpg"
+      },
+      {
+        "nombre": "Conitos Oreo con chocolate Milka Leche",
+        "foto": "assets/img/milka/img-ppal9.jpg"
+      },
+      {
+        "nombre": "Funge Milka Blanco con Oreo",
+        "foto": "assets/img/milka/img-ppal12.jpg"
+      },
+      {
+        "nombre": "Palitos helados Mantecol decorados con chocolate Milka Leche",
+        "foto": "assets/img/milka/img-ppal15.jpg"
+      },
+      {
+        "nombre": "Tarta Oreo & Milka Blanco",
+        "foto": "assets/img/milka/img-ppal17.jpg"
+      },
+      {
+        "nombre": "Torta Duquesa con Lincoln y postre Royal de chocolate",
+        "foto": "assets/img/milka/img-ppal18.jpg"
+      },
+      {
+        "nombre": "Torta Mousse de Dulce de Leche con Lincoln y Milka Oreo",
+        "foto": "assets/img/milka/img-ppal19.jpg"
+      },
+      {
+        "nombre": "Volcán de chocolate Milka Blanco y Oreo con corazón de dulce de leche",
+        "foto": "assets/img/milka/img-ppal21.jpg"
+      }
+    ]
+  },
+  {
+    "nombre": "terrabusi",
+    "receta": [
+      {
+        "nombre": "Brigadeiros de Oreo y Lincoln",
+        "foto": "assets/img/terrabusi/img-ppal3.jpg"
+      },
+      {
+        "nombre": "Cheesecake de Mantecol y Lincoln",
+        "foto": "assets/img/terrabusi/img-ppal6.jpg"
+      },
+      {
+        "nombre": "Torta Duquesa con Lincoln y postre Royal de chocolate",
+        "foto": "assets/img/terrabusi/img-ppal18.jpg"
+      },
+      {
+        "nombre": "Torta Mousse de Dulce de Leche con Lincoln y Milka Oreo",
+        "foto": "assets/img/terrabusi/img-ppal19.jpg"
+      }
+    ]
+  },
+  {
+    "nombre": "royal",
+    "receta": [
+      {
+        "nombre": "Bizcochuelo Royal con crema de Mantecol",
+        "foto": "assets/img/royal/img-ppal2.jpg"
+      },
+      {
+        "nombre": "Budín de Naranja con Mini Oreo y Milka",
+        "foto": "assets/img/royal/img-ppal4.jpg"
+      },
+      {
+        "nombre": "Copitas Royal con Mantecol",
+        "foto": "assets/img/royal/img-ppal11.jpg"
+      },
+      {
+        "nombre": "Muffins de Bizcochuelo Royal con corazón de Oreo",
+        "foto": "assets/img/royal/img-ppal14.jpg"
+      },
+      {
+        "nombre": "Torta Duquesa con Lincoln y postre Royal de chocolate",
+        "foto": "assets/img/royal/img-ppal18.jpg"
+      }
+    ]
   }
 ]
