@@ -1,12 +1,18 @@
 <div class="max-w-6xl pt-28 mx-auto">
     <div class="grid grid-cols-12 gap-x-5 gap-y-8 mx-auto sm:mx-5" *ngFor="let p of producto">
+        <div class="col-span-12 mx-auto w-full">
+            <img [src]="p.logo" class="w-auto mx-auto h-14 pb-3" alt="">
+            <div class="text-primary text-2xl text-center">
+                <h1>Recetas con <span class="font-extrabold">{{marcaSelect | titlecase}}</span> </h1>
+            </div>
+        </div>
         <div class="col-span-12 mx-auto md:col-span-6 lg:col-span-4 w-[80%] md:w-full" *ngFor="let r of p.receta"
             data-aos="zoom-in-up">
             <div class="h-20 border border-primary bg-primary rounded-tl-2xl rounded-tr-2xl">
                 <div class="flex justify-center items-center h-full text-white w-2/3 mx-auto text-center">
-                    <!-- <h1>Brigadeiros de <span class="font-extrabold">Oreo</span> y <span
+                    <!-- <h1>Brigadeiros de <span class="font-extrabold"><b>Oreo</b></span> y <span
                             class="font-extrabold">Lincoln</span> </h1> -->
-                    <h1 class="text-sm md:text-base">{{r.nombre}}</h1>
+                    <h1 class="text-sm md:text-base" [innerHTML]="r.nombre"></h1>
                 </div>
             </div>
             <div class="relative top-0 left-0 z-10 w-full mx-auto">

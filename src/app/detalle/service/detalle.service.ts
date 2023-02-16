@@ -3,20 +3,19 @@ import { Producto } from 'src/app/interfaces/recetas.interface';
 import data from '../../../mockdata/data.json';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DetalleService {
-
   producto: Producto[] = [
     {
       marca: 'oreo',
       receta: [
         {
-          nombre: 'Brigadeiros de Oreo y Lincoln',
+          nombre: 'Brigadeiros de <b>Oreo</b> y Lincoln',
           foto: 'assets/img/oreo/img-ppal3.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -33,28 +32,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Budín de Naranja con Mini Oreo y Milka',
+          nombre: 'Budín de Naranja con Mini <b>Oreo</b> y <b>Milka</b>',
           foto: 'assets/img/oreo/img-ppal4.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -71,28 +74,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Cheesecake de Milka y Oreo Golden',
+          nombre: 'Cheesecake de <b>Milka</b> y <b>Oreo</b> Golden',
           foto: 'assets/img/oreo/img-ppal5.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -109,28 +116,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Cheesecake de Oreo con Cadbury 3 Sueños',
+          nombre: 'Cheesecake de <b>Oreo</b> con Cadbury 3 Sueños',
           foto: 'assets/img/oreo/img-ppal7.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -147,28 +158,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Choco Oreo con Milka Bis Oreo',
+          nombre: 'Choco <b>Oreo</b> con <b>Milka</b> Bis <b>Oreo</b>',
           foto: 'assets/img/oreo/img-ppal8.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -185,28 +200,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Conitos Oreo con chocolate Milka Leche',
+          nombre: 'Conitos <b>Oreo</b> con chocolate <b>Milka</b> Leche',
           foto: 'assets/img/oreo/img-ppal9.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -223,28 +242,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Cookies rellenas de Oreo',
+          nombre: 'Cookies rellenas de <b>Oreo</b>',
           foto: 'assets/img/oreo/img-ppal10.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -261,28 +284,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Funge Milka Blanco con Oreo',
+          nombre: 'Funge <b>Milka</b> Blanco con <b>Oreo</b>',
           foto: 'assets/img/oreo/img-ppal12.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -299,28 +326,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Hot Cakes Oreo con Cadbury 3 Sueños',
+          nombre: 'Hot Cakes <b>Oreo</b> con Cadbury 3 Sueños',
           foto: 'assets/img/oreo/img-ppal13.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -337,28 +368,33 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Muffins de Bizcochuelo Royal con corazón de Oreo',
+          nombre:
+            'Muffins de Bizcochuelo <b>Royal</b> con corazón de <b>Oreo</b>',
           foto: 'assets/img/oreo/img-ppal14.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -375,28 +411,32 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Tarta Oreo & Milka Blanco',
+          nombre: 'Tarta <b>Oreo</b> & <b>Milka</b> Blanco',
           foto: 'assets/img/oreo/img-ppal17.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -413,28 +453,33 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
-          nombre: 'Torta Duquesa con Lincoln y postre Royal de chocolate',
+          nombre:
+            'Torta Duquesa con Lincoln y postre <b>Royal</b> de chocolate',
           foto: 'assets/img/oreo/img-ppal18.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -451,29 +496,33 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
           nombre:
-            'Triffles de Oreo y dulce de leche con crema de frutillas y Cadbury Yoghurt',
+            'Triffles de <b>Oreo</b> y dulce de leche con crema de frutillas y Cadbury Yoghurt',
           foto: 'assets/img/oreo/img-ppal20.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -490,29 +539,33 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
         {
           nombre:
-            'Volcán de chocolate Milka Blanco y Oreo con corazón de dulce de leche',
+            'Volcán de chocolate <b>Milka</b> Blanco y <b>Oreo</b> con corazón de dulce de leche',
           foto: 'assets/img/oreo/img-ppal21.jpg',
           ingredientes: [
             {
-              nombre: '1 paquete de Oreo por 118 g.',
+              nombre: '1 paquete de <b>Oreo</b> por 118 g.',
             },
             {
               nombre: '1 paquete de Lincoln',
@@ -529,19 +582,23 @@ export class DetalleService {
           ],
           preparacion: [
             {
-              nombre: 'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
+              nombre:
+                'Poner en una cacerola le leche condensada con el chocolate picado y la manteca.',
             },
             {
-              nombre: 'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
+              nombre:
+                'Llevar al fuego hasta que se derrita bien todo siempre revolviendo.',
             },
             {
-              nombre: 'Agregar el paquete de Oreo partidas con la mano.',
+              nombre: 'Agregar el paquete de <b>Oreo</b> partidas con la mano.',
             },
             {
-              nombre: 'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
+              nombre:
+                'Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.',
             },
             {
-              nombre: 'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
+              nombre:
+                'Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!',
             },
           ],
         },
@@ -549,9 +606,9 @@ export class DetalleService {
     },
   ];
 
-  constructor() { }
+  constructor() {}
 
-  getProductos(marca: string){
-    return data.filter(f => f.nombre == marca)
+  getProductos(marca: string) {
+    return data.filter((f) => f.nombre == marca);
   }
 }

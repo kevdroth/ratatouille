@@ -1,156 +1,160 @@
 [
   {
     "nombre": "oreo",
+    "logo": "assets/img/oreo/oreo.png",
     "receta": [
       {
-        "nombre": "Brigadeiros de Oreo y Lincoln",
+        "nombre": "Brigadeiros de <b>Oreo</b> y <b>Lincoln</b>",
         "foto": "assets/img/oreo/img-ppal3.jpg"
       },
       {
-        "nombre": "Budín de Naranja con Mini Oreo y Milka",
+        "nombre": "Budín de Naranja con Mini <b>Oreo</b> y <b>Milka</b>",
         "foto": "assets/img/oreo/img-ppal4.jpg"
       },
       {
-        "nombre": "Cheesecake de Milka y Oreo Golden",
+        "nombre": "Cheesecake de <b>Milka</b> y <b>Oreo</b> Golden",
         "foto": "assets/img/oreo/img-ppal5.jpg"
       },
       {
-        "nombre": "Cheesecake de Oreo con Cadbury 3 Sueños",
+        "nombre": "Cheesecake de <b>Oreo</b> con <b>Cadbury</b> 3 Sueños",
         "foto": "assets/img/oreo/img-ppal7.jpg"
       },
       {
-        "nombre": "Choco Oreo con Milka Bis Oreo",
+        "nombre": "Choco <b>Oreo</b> con <b>Milka</b> Bis <b>Oreo</b>",
         "foto": "assets/img/oreo/img-ppal8.jpg"
       },
       {
-        "nombre": "Conitos Oreo con chocolate Milka Leche",
+        "nombre": "Conitos <b>Oreo</b> con chocolate <b>Milka</b> Leche",
         "foto": "assets/img/oreo/img-ppal9.jpg"
       },
       {
-        "nombre": "Cookies rellenas de Oreo",
+        "nombre": "Cookies rellenas de <b>Oreo</b>",
         "foto": "assets/img/oreo/img-ppal10.jpg"
       },
       {
-        "nombre": "Funge Milka Blanco con Oreo",
+        "nombre": "Funge <b>Milka</b> Blanco con <b>Oreo</b>",
         "foto": "assets/img/oreo/img-ppal12.jpg"
       },
       {
-        "nombre": "Hot Cakes Oreo con Cadbury 3 Sueños",
+        "nombre": "Hot Cakes <b>Oreo</b> con <b>Cadbury</b> 3 Sueños",
         "foto": "assets/img/oreo/img-ppal13.jpg"
       },
       {
-        "nombre": "Muffins de Bizcochuelo Royal con corazón de Oreo",
+        "nombre": "Muffins de Bizcochuelo <b>Royal</b> con corazón de <b>Oreo</b>",
         "foto": "assets/img/oreo/img-ppal14.jpg"
       },
       {
-        "nombre": "Tarta Oreo & Milka Blanco",
+        "nombre": "Tarta <b>Oreo</b> & <b>Milka</b> Blanco",
         "foto": "assets/img/oreo/img-ppal17.jpg"
       },
       {
-        "nombre": "Torta Duquesa con Lincoln y postre Royal de chocolate",
+        "nombre": "Torta Duquesa con <b>Lincoln</b> y postre <b>Royal</b> de chocolate",
         "foto": "assets/img/oreo/img-ppal18.jpg"
       },
       {
-        "nombre": "Triffles de Oreo y dulce de leche con crema de frutillas y Cadbury Yoghurt",
+        "nombre": "Triffles de <b>Oreo</b> y dulce de leche con crema de frutillas y <b>Cadbury</b> Yoghurt",
         "foto": "assets/img/oreo/img-ppal20.jpg"
       },
       {
-        "nombre": "Volcán de chocolate Milka Blanco y Oreo con corazón de dulce de leche",
+        "nombre": "Volcán de chocolate <b>Milka</b> Blanco y <b>Oreo</b> con corazón de dulce de leche",
         "foto": "assets/img/oreo/img-ppal21.jpg"
       }
     ]
   },
   {
     "nombre": "milka",
+    "logo": "assets/img/milka/milka.png",
     "receta": [
       {
-        "nombre": "Bizcochuelo Royal con crema de Mantecol",
+        "nombre": "Bizcochuelo <b>Royal</b> con crema de <b>Mantecol</b>",
         "foto": "assets/img/milka/img-ppal2.jpg"
       },
       {
-        "nombre": "Budín de Naranja con Mini Oreo y Milka",
+        "nombre": "Budín de Naranja con Mini <b>Oreo</b> y <b>Milka</b>",
         "foto": "assets/img/milka/img-ppal4.jpg"
       },
       {
-        "nombre": "Cheesecake de Milka y Oreo Golden",
+        "nombre": "Cheesecake de <b>Milka</b> y <b>Oreo</b> Golden",
         "foto": "assets/img/milka/img-ppal5.jpg"
       },
       {
-        "nombre": "Choco Oreo con Milka Bis Oreo",
+        "nombre": "Choco <b>Oreo</b> con <b>Milka</b> Bis <b>Oreo</b>",
         "foto": "assets/img/milka/img-ppal8.jpg"
       },
       {
-        "nombre": "Conitos Oreo con chocolate Milka Leche",
+        "nombre": "Conitos <b>Oreo</b> con chocolate <b>Milka</b> Leche",
         "foto": "assets/img/milka/img-ppal9.jpg"
       },
       {
-        "nombre": "Funge Milka Blanco con Oreo",
+        "nombre": "Funge <b>Milka</b> Blanco con <b>Oreo</b>",
         "foto": "assets/img/milka/img-ppal12.jpg"
       },
       {
-        "nombre": "Palitos helados Mantecol decorados con chocolate Milka Leche",
+        "nombre": "Palitos helados <b>Mantecol</b> decorados con chocolate <b>Milka</b> Leche",
         "foto": "assets/img/milka/img-ppal15.jpg"
       },
       {
-        "nombre": "Tarta Oreo & Milka Blanco",
+        "nombre": "Tarta <b>Oreo</b> & <b>Milka</b> Blanco",
         "foto": "assets/img/milka/img-ppal17.jpg"
       },
       {
-        "nombre": "Torta Duquesa con Lincoln y postre Royal de chocolate",
+        "nombre": "Torta Duquesa con <b>Lincoln</b> y postre <b>Royal</b> de chocolate",
         "foto": "assets/img/milka/img-ppal18.jpg"
       },
       {
-        "nombre": "Torta Mousse de Dulce de Leche con Lincoln y Milka Oreo",
+        "nombre": "Torta Mousse de Dulce de Leche con <b>Lincoln</b> y <b>Milka</b> <b>Oreo</b>",
         "foto": "assets/img/milka/img-ppal19.jpg"
       },
       {
-        "nombre": "Volcán de chocolate Milka Blanco y Oreo con corazón de dulce de leche",
+        "nombre": "Volcán de chocolate <b>Milka</b> Blanco y <b>Oreo</b> con corazón de dulce de leche",
         "foto": "assets/img/milka/img-ppal21.jpg"
       }
     ]
   },
   {
     "nombre": "terrabusi",
+    "logo": "assets/img/terrabusi/terrabusi.png",
     "receta": [
       {
-        "nombre": "Brigadeiros de Oreo y Lincoln",
+        "nombre": "Brigadeiros de <b>Oreo</b> y <b>Lincoln</b>",
         "foto": "assets/img/terrabusi/img-ppal3.jpg"
       },
       {
-        "nombre": "Cheesecake de Mantecol y Lincoln",
+        "nombre": "Cheesecake de <b>Mantecol</b> y <b>Lincoln</b>",
         "foto": "assets/img/terrabusi/img-ppal6.jpg"
       },
       {
-        "nombre": "Torta Duquesa con Lincoln y postre Royal de chocolate",
+        "nombre": "Torta Duquesa con <b>Lincoln</b> y postre <b>Royal</b> de chocolate",
         "foto": "assets/img/terrabusi/img-ppal18.jpg"
       },
       {
-        "nombre": "Torta Mousse de Dulce de Leche con Lincoln y Milka Oreo",
+        "nombre": "Torta Mousse de Dulce de Leche con <b>Lincoln</b> y <b>Milka</b> <b>Oreo</b>",
         "foto": "assets/img/terrabusi/img-ppal19.jpg"
       }
     ]
   },
   {
     "nombre": "royal",
+    "logo": "assets/img/royal/royal.png",
     "receta": [
       {
-        "nombre": "Bizcochuelo Royal con crema de Mantecol",
+        "nombre": "Bizcochuelo <b>Royal</b> con crema de <b>Mantecol</b>",
         "foto": "assets/img/royal/img-ppal2.jpg"
       },
       {
-        "nombre": "Budín de Naranja con Mini Oreo y Milka",
+        "nombre": "Budín de Naranja con Mini <b>Oreo</b> y <b>Milka</b>",
         "foto": "assets/img/royal/img-ppal4.jpg"
       },
       {
-        "nombre": "Copitas Royal con Mantecol",
+        "nombre": "Copitas <b>Royal</b> con <b>Mantecol</b>",
         "foto": "assets/img/royal/img-ppal11.jpg"
       },
       {
-        "nombre": "Muffins de Bizcochuelo Royal con corazón de Oreo",
+        "nombre": "Muffins de Bizcochuelo <b>Royal</b> con corazón de <b>Oreo</b>",
         "foto": "assets/img/royal/img-ppal14.jpg"
       },
       {
-        "nombre": "Torta Duquesa con Lincoln y postre Royal de chocolate",
+        "nombre": "Torta Duquesa con <b>Lincoln</b> y postre <b>Royal</b> de chocolate",
         "foto": "assets/img/royal/img-ppal18.jpg"
       }
     ]
