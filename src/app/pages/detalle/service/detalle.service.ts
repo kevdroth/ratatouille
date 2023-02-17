@@ -8,7 +8,7 @@ export class DetalleService {
 
   constructor() {}
 
-  getProductos(marca: string) {
-    return data.filter((f) => f.nombre == marca);
+  getProductos(){
+    return data
   }
 }

@@ -11,13 +11,15 @@ export class DetalleComponent implements OnInit {
 
   @Input() marcaSelect: string = 'oreo';
 
-  producto!: any[]
+  producto!: any
 
   constructor(private detalleService: DetalleService, private router: Router) {}
 
   ngOnInit(): void {
-    this.producto = this.detalleService.getProductos(this.marcaSelect);
-    console.log("🚀 ~ prod", this.producto)
+    // this.producto = this.detalleService.getProductos(this.marcaSelect);
+    // console.log("🚀 ~ prod", this.producto)
+    this.producto = this.detalleService.getProductos().recetas
+    console.log("🚀 ~ producto", this.producto)
 
   }
 }
