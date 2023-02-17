@@ -16,6 +16,7 @@ export class DetalleComponent implements OnInit {
   ngOnInit(): void {
     this.producto = this.detalleService.getProductos().recetas
     console.log("🚀 ~ producto", this.producto)
-
   }
+
+  
 }

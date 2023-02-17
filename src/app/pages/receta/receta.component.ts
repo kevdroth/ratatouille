@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs';
 import { RecetaService } from './service/receta.service';
 
@@ -14,7 +14,8 @@ export class RecetaComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private recetaService: RecetaService
+    private recetaService: RecetaService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -32,5 +33,12 @@ export class RecetaComponent implements OnInit {
           // .map((p) => this.propios = p.ingredientes.propios);
         console.log('🚀 ~ receta', this.receta);
       });
+  }
+
+  home(){
+    this.router.navigateByUrl('home')
+  }
+
+  ngOnDestroy(): void {
   }
 }
