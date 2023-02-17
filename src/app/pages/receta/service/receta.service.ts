@@ -8,12 +8,10 @@ export class RecetaService {
 
   constructor() { }
 
-  getRecetas(id:number){
-    return data.recetas.filter(f => f.idReceta === id)
-  }
-
   getReceta(id: number){
-    return data
+    const {recetas} = data
+    const receta = recetas.filter(f => f.idReceta == id )
+    return receta
   }
 
 }

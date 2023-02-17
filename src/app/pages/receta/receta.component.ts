@@ -9,7 +9,7 @@ import { RecetaService } from './service/receta.service';
   styleUrls: ['./receta.component.scss'],
 })
 export class RecetaComponent implements OnInit {
-  receta!: any;
+  receta!: any[];
   ingredientes!: any[];
 
   constructor(
@@ -26,13 +26,8 @@ export class RecetaComponent implements OnInit {
         })
       )
       .subscribe((value) => {
-        this.recetaService
-          .getReceta(value)
-          .recetas.filter((f) => f.idReceta == value)
-          .map(
-            ({ ingredientes }) => (this.ingredientes = ingredientes.propios)
-          );
-        console.log('🚀 ~ ingredientes', this.ingredientes);
+        this.receta = this.recetaService.getReceta(value);
+        console.log('🚀 ~ receta', this.receta);
       });
   }
 

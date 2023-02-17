@@ -4,6 +4,7 @@
             <div>
                 <img src="assets/images/img-ppal1.jpg" class="sm:h-[650px] w-full " alt="">
             </div>
+            
         </div>
         <div class="col-span-12 sm:col-span-6 mx-auto my-5" data-aos-duration="700" data-aos="fade-left">
             <div class="grid grid-cols-12 mx-5">
@@ -16,14 +17,12 @@
                         class="h-[148px] w-[111px] sm:w-[116px] sm:h-[180px] mx-5 mt-5 absolute top-0" alt="">
                 </div>
             </div>
-            <div class="mt-12 lg:mt-32">
+            <div class="mt-12 lg:mt-32" *ngFor="let r of receta">
                 <div class="col-span-12 my-5 w-2/3 mx-5">
                     <h1 class="text-secondary font-extrabold my-2">Ingredientes</h1>
                     <ul class="list-disc mx-5 text-gray-600" >
-                        <li *ngFor="let i of ingredientes">1 paquete de Oreo por 118 g.</li>
-                        <li>1 paquete de Oreo por 118 g.</li>
-                        <li>1 paquete de Oreo por 118 g.</li>    
-                        {{ingredientes}}                   
+                        <li *ngFor="let p of r.ingredientes.propios">{{p.producto}} {{p.cantidad}}</li>                 
+                        <li *ngFor="let n of r.ingredientes.noPropios">{{n.producto}} {{n.cantidad}}</li>                 
                     </ul>
                 </div>
                 <div class="col-span-12 my-5 mx-5">
