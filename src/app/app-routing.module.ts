@@ -19,7 +19,7 @@ const routes: Routes = [
     component: DetalleComponent,
   },
   {
-    path: 'receta',
+    path: 'receta/:idReceta',
     component: RecetaComponent,
   },
 ];

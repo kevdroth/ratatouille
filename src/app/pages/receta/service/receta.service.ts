@@ -8,7 +8,12 @@ export class RecetaService {
 
   constructor() { }
 
-  getRecetas(){
+  getRecetas(id:number){
+    return data.recetas.filter(f => f.idReceta === id)
+  }
+
+  getReceta(id: number){
     return data
   }
+
 }
