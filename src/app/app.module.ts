@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
-import { HomeComponent } from './home/home.component';
-import { DetalleComponent } from './detalle/detalle.component';
+import { HomeComponent } from './pages/home/home.component';
+import { DetalleComponent } from './pages/detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +21,6 @@ import { DetalleComponent } from './detalle/detalle.component';
     SharedModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

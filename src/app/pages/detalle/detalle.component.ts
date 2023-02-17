@@ -9,7 +9,7 @@ import { DetalleService } from './service/detalle.service';
 })
 export class DetalleComponent implements OnInit {
 
-  @Input() marcaSelect: string = 'milka';
+  @Input() marcaSelect: string = 'oreo';
 
   producto!: any[]
 

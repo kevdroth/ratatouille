@@ -1,6 +1,7 @@
 [
   {
     "nombre": "oreo",
+    "slug": "oreo",
     "logo": "assets/img/oreo/oreo.png",
     "receta": [
       {
@@ -63,6 +64,7 @@
   },
   {
     "nombre": "milka",
+    "slug": "milka",
     "logo": "assets/img/milka/milka.png",
     "receta": [
       {
@@ -113,6 +115,7 @@
   },
   {
     "nombre": "terrabusi",
+    "slug": "terrabusi",
     "logo": "assets/img/terrabusi/terrabusi.png",
     "receta": [
       {
@@ -135,6 +138,7 @@
   },
   {
     "nombre": "royal",
+    "slug": "royal",
     "logo": "assets/img/royal/royal.png",
     "receta": [
       {
