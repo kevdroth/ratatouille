@@ -10,7 +10,7 @@ import { RecetaService } from './service/receta.service';
 })
 export class RecetaComponent implements OnInit {
   receta!: any;
-  propios!: any[]
+  ingredientes!: any[];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -26,19 +26,19 @@ export class RecetaComponent implements OnInit {
         })
       )
       .subscribe((value) => {
-        this.recetaService.getRecetas(value);
-        this.receta = this.recetaService
+        this.recetaService
           .getReceta(value)
           .recetas.filter((f) => f.idReceta == value)
-          // .map((p) => this.propios = p.ingredientes.propios);
-        console.log('🚀 ~ receta', this.receta);
+          .map(
+            ({ ingredientes }) => (this.ingredientes = ingredientes.propios)
+          );
+        console.log('🚀 ~ ingredientes', this.ingredientes);
       });
   }
 
-  home(){
-    this.router.navigateByUrl('home')
+  home() {
+    this.router.navigateByUrl('home');
   }
 
-  ngOnDestroy(): void {
-  }
+  ngOnDestroy(): void {}
 }
