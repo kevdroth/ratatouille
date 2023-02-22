@@ -24,17 +24,13 @@
                     <ul class="list-disc mx-5 text-gray-600">
                         <li *ngFor="let p of r.ingredientes.propios"><span class="font-extrabold">{{p.producto}}</span>
                             {{p.cantidad}}</li>
-                        <li *ngFor="let n of r.ingredientes.noPropios">{{n.producto}} {{n.cantidad}}</li>
+                        <li *ngFor="let n of r.ingredientes.noPropios">{{n.cantidad}} {{n.producto}}</li>
                     </ul>
                 </div>
-                <div class="col-span-12 my-5 mx-5">
+                <div class="col-span-12 my-5 mx-5" *ngIf="r.preparacion">
                     <h1 class="text-secondary font-extrabold my-2">Preparación</h1>
                     <ul class="list-disc mx-5 text-gray-600">
-                        <li class="mb-3">Poner en una cacerola le leche condensada con el chocolate picado y la manteca.
-                        </li>
-                        <li class="mb-3">Poner en una cacerola le leche condensada con el chocolate picado y la manteca.
-                        </li>
-                        <li class="mb-3">Poner en una cacerola le leche condensada con el chocolate picado y la manteca.
+                        <li class="mb-3" *ngFor="let p of r.preparacion">{{p.paso}}
                         </li>
                     </ul>
                 </div>

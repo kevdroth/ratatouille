@@ -12,6 +12,7 @@ export class DetalleComponent implements OnInit {
   producto!: any;
   marcaTitulo!: string;
   ig!: string;
+  toggleMenu: boolean = false
 
   constructor(
     private detalleService: DetalleService,
