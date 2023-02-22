@@ -10,6 +10,7 @@ import { map, tap } from 'rxjs';
 })
 export class DetalleComponent implements OnInit {
   producto!: any;
+  marcaTitulo!: string;
 
   constructor(
     private detalleService: DetalleService,
@@ -18,12 +19,11 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const asd = this.activatedRoute.params.pipe(
-      map(({titulo}) => titulo),
-      // tap( titulo => console.log(titulo ) )
-      ).subscribe(r => this.producto = this.detalleService.getProductos(r));
-      console.log("🚀 ~ producto:", this.producto)
-
-    ;
+    this.activatedRoute.params.pipe(map(({ titulo }) => this.marcaTitulo = titulo)).subscribe({
+      next: (tituloMarca) =>
+        (this.producto = this.detalleService.getProductos(tituloMarca)),
+      error: (err) => console.log(err),
+    });
+    console.log(this.producto, this.marcaTitulo);
   }
 }

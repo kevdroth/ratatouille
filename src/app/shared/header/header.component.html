@@ -1,16 +1,21 @@
-<nav class="h-16 bg-optional flex flex-col" >
-    <div class="max-w-md pt-7 mx-10 self-center" >
-        <div class="grid grid-cols-12 mx-auto w-full justify-items-center my-4 gap-x-5" >
-            <div class="col-span-4">
-                <img src="assets/img/logo-milka.png" alt="" >
+<nav class="h-16 bg-optional flex flex-col">
+    <div class="max-w-md pt-7 mx-10 self-center">
+        <div class="grid grid-cols-12 mx-auto w-full justify-items-center my-4 gap-x-5">
+            <div class="col-span-4 z-50">
+                <a [href]="'detalle/Milka'">
+                    <img src="assets/img/logo-milka.png" alt="" class="h-full">
+                </a>
             </div>
-            <div class="col-span-4">
-                <img src="assets/img/logo-terrabusi.png" alt="" >
+            <div class="col-span-4 z-50">
+                <a [href]="'detalle/Oreo'">
+                    <img src="assets/img/logo-oreo.png" alt="">
+                </a>
             </div>
-            <div class="col-span-4">
-                <img src="assets/img/logo-royal.png" alt="" >
+            <div class="col-span-4 z-50">
+                <a [href]="'detalle/Royal'">
+                    <img src="assets/img/logo-royal.png" alt="">
+                </a>
             </div>
         </div>
-        
     </div>
 </nav>
