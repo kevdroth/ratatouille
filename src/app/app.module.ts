@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './pages/home/home.component';
-import { DetalleComponent } from './pages/detalle/detalle.component';
 import { CommonModule } from '@angular/common';
 import { RecetaComponent } from './pages/receta/receta.component';
+import { DetalleComponent } from './pages/detalle/detalle.component';
 
 @NgModule({
   declarations: [

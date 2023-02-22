@@ -11,6 +11,7 @@ import { map, tap } from 'rxjs';
 export class DetalleComponent implements OnInit {
   producto!: any;
   marcaTitulo!: string;
+  ig!: string;
 
   constructor(
     private detalleService: DetalleService,
@@ -19,11 +20,26 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.activatedRoute.params.pipe(map(({ titulo }) => this.marcaTitulo = titulo)).subscribe({
-      next: (tituloMarca) =>
-        (this.producto = this.detalleService.getProductos(tituloMarca)),
-      error: (err) => console.log(err),
-    });
-    console.log(this.producto, this.marcaTitulo);
+    this.activatedRoute.params
+      .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
+      .subscribe({
+        next: (tituloMarca) =>
+          (this.producto = this.detalleService.getProductos(tituloMarca)),
+      });
+    this.setIg()
+  }
+
+  setIg() {
+    switch (this.marcaTitulo) {
+      case 'Oreo':
+        this.ig = 'https://www.instagram.com/recetoreo/?hl=es-la';
+        break;
+      case 'Milka':
+        this.ig = 'https://www.instagram.com/milka_argentina/';
+        break;
+      default:
+        this.ig = '';
+        break;
+    }
   }
 }
