@@ -15,7 +15,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'detalle',
+    path: 'detalle/:titulo',
     component: DetalleComponent,
   },
   {

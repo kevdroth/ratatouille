@@ -13,5 +13,4 @@ export class RecetaService {
     const receta = recetas.filter(f => f.idReceta == id )
     return receta
   }
-
 }

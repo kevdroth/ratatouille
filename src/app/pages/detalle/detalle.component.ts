@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DetalleService } from './service/detalle.service';
+import { map, tap } from 'rxjs';
 
 @Component({
   selector: 'app-detalle',
@@ -8,15 +9,21 @@ import { DetalleService } from './service/detalle.service';
   styleUrls: ['./detalle.component.scss'],
 })
 export class DetalleComponent implements OnInit {
+  producto!: any;
 
-  producto!: any
-
-  constructor(private detalleService: DetalleService, private router: Router) {}
+  constructor(
+    private detalleService: DetalleService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.producto = this.detalleService.getProductos().recetas
-    console.log("🚀 ~ producto", this.producto)
-  }
+    const asd = this.activatedRoute.params.pipe(
+      map(({titulo}) => titulo),
+      // tap( titulo => console.log(titulo ) )
+      ).subscribe(r => this.producto = this.detalleService.getProductos(r));
+      console.log("🚀 ~ producto:", this.producto)
 
-  
+    ;
+  }
 }
