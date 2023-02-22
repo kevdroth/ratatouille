@@ -1,4 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { MenuDialogComponent } from './components/menu-dialog/menu-dialog.component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -6,15 +8,22 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() showFiller = new EventEmitter();
-
-  toggle: boolean = false
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
   }
 
-  openMenu(){
-    this.toggle = !this.toggle
-    this.showFiller.emit(this.toggle)
+  openMenu() {
+    const dialogRef = this.dialog.open(MenuDialogComponent, {
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      height: '100%',
+      width: '100%',
+      panelClass:'fullscreen-dialog'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
+
 }
