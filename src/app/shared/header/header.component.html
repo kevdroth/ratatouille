@@ -1,19 +1,19 @@
 <nav class="h-16 bg-optional flex flex-col">
-    <div class="md:max-w-md max-w-xs pt-7 mx-10 self-center inline-flex">
+    <div class="md:max-w-md max-w-full pt-7 sm:mx-3 mx-10 self-center inline-flex">
         <div>
-            <div class="grid grid-cols-12 mx-auto w-full justify-items-center my-4 gap-x-5">
+            <div class="grid grid-cols-12 mx-auto w-full justify-items-center my-4 gap-x-5" data-aos-duration="500" data-aos="fade-down">
                 <div class="col-span-4 z-50 place-self-center">
-                    <a [href]="'detalle/Oreo'">
+                    <a [href]="'detalle/Oreo'" class="hidden md:block">
                         <img src="assets/img/logo-oreo.png" alt="">
                     </a>
                 </div>
                 <div class="col-span-4 z-50 place-self-center">
-                    <a [href]="'detalle/Milka'">
+                    <a [href]="'detalle/Milka'" class="hidden md:block">
                         <img src="assets/img/logo-milka.png" alt="" class="h-full">
                     </a>
                 </div>
                 <div class="col-span-4 z-50 place-self-center">
-                    <a [href]="'detalle/Royal'">
+                    <a [href]="'detalle/Royal'" class="hidden md:block">
                         <img src="assets/img/logo-royal.png" alt="">
                     </a>
                 </div>
