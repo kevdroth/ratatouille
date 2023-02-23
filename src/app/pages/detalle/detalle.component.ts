@@ -12,6 +12,7 @@ export class DetalleComponent implements OnInit {
   producto!: any;
   marcaTitulo!: string;
   ig!: string;
+  windowScrolled = false;
 
   constructor(
     private detalleService: DetalleService,
@@ -20,6 +21,9 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    window.addEventListener('scroll', () => {
+      this.windowScrolled = window.pageYOffset !== 0;
+    });
     this.activatedRoute.params
       .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
       .subscribe({
