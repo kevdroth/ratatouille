@@ -9,13 +9,18 @@ import { HomeComponent } from './pages/home/home.component';
 import { CommonModule } from '@angular/common';
 import { RecetaComponent } from './pages/receta/receta.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DetalleComponent,
-    RecetaComponent
+    RecetaComponent,
+    RegistroComponent,
   ],
   imports: [
     CommonModule,
@@ -23,6 +28,8 @@ import { DetalleComponent } from './pages/detalle/detalle.component';
     AppRoutingModule,
     NoopAnimationsModule,
     SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

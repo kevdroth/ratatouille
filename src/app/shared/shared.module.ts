@@ -4,6 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MenuDialogComponent } from './header/components/menu-dialog/menu-dialog.component';
+import {MatDividerModule} from '@angular/material/divider';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -12,7 +14,8 @@ import { MenuDialogComponent } from './header/components/menu-dialog/menu-dialog
   ],
   imports: [
     CommonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDividerModule
   ],
   exports: [HeaderComponent, FooterComponent]
 })
