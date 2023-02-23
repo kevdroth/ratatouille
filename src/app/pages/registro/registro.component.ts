@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -12,7 +13,7 @@ export class RegistroComponent implements OnInit {
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
   
-  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar) {}
+  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router) {}
 
   ngOnInit(): void {
     this.form;
@@ -48,6 +49,7 @@ export class RegistroComponent implements OnInit {
   onSubmit() {
     this.openSend()
     this.onReset()
+    this.router.navigateByUrl('home')
   }
 
   onReset() {
