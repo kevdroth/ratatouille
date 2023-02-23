@@ -12,6 +12,8 @@ import { DetalleComponent } from './pages/detalle/detalle.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     NoopAnimationsModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

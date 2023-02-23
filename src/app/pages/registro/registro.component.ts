@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.scss']
+  styleUrls: ['./registro.component.scss'],
 })
 export class RegistroComponent implements OnInit {
 
-  constructor(private fb: FormBuilder,){}
+  horizontalPosition: MatSnackBarHorizontalPosition = 'center';
+  verticalPosition: MatSnackBarVerticalPosition = 'top';
+  
+  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar) {}
 
   ngOnInit(): void {
-    this.form
+    this.form;
   }
 
   form: FormGroup = this.fb.group({
@@ -40,8 +44,21 @@ export class RegistroComponent implements OnInit {
     ],
     selectPais: ['', Validators.compose([Validators.required])],
   });
-  
+
   onSubmit() {
+    this.openSend()
+    this.onReset()
   }
 
+  onReset() {
+    this.form.reset();
+  }
+
+  openSend() {
+    this._snackBar.open('Formulario enviado correctamente', 'Ocultar', {
+      horizontalPosition: this.horizontalPosition,
+      verticalPosition: this.verticalPosition,
+      duration: 6000,
+    });
+  }
 }

@@ -1,5 +1,5 @@
 <div class="max-w-md mt-28 mx-auto py-7">
-    <div class="w-full pb-8 text-center text-primary text-2xl mx-auto font-semibold">
+    <div class="w-full pb-8 text-center text-primary text-4xl mx-auto font-semibold">
         <h1>¡Registrate!</h1>
     </div>
     <form [formGroup]="form" (ngSubmit)="onSubmit()" class="grid grid-cols-12 gap-y-5 mx-auto px-5">
@@ -9,6 +9,16 @@
                 <input type="text" id="nombre" formControlName="nombre"
                     class="bg-gray-50 border text-sm rounded-lg block w-full p-2.5" placeholder="Ingrese nombre.."
                     required>
+                <mat-error *ngIf="form.get('nombre')?.hasError('required') && form.get('nombre')?.touched"
+                    class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> Ingrese nombre</p>
+                </mat-error>
+                <mat-error *ngIf="form.get('nombre')?.hasError('maxlength')" class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> El nombre es muy largo</p>
+                </mat-error>
+                <mat-error *ngIf="form.get('nombre')?.hasError('pattern')" class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> Ingrese nombre válido</p>
+                </mat-error>
             </div>
         </div>
         <div class="col-span-12">
@@ -17,6 +27,16 @@
                 <input type="text" id="apellido" formControlName="apellido"
                     class="bg-gray-50 border text-sm rounded-lg block w-full p-2.5" placeholder="Ingrese apellido.."
                     required>
+                <mat-error *ngIf="form.get('apellido')?.hasError('required') && form.get('apellido')?.touched"
+                    class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> Ingrese apellido</p>
+                </mat-error>
+                <mat-error *ngIf="form.get('apellido')?.hasError('maxlength')" class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> El apellido es muy largo</p>
+                </mat-error>
+                <mat-error *ngIf="form.get('apellido')?.hasError('pattern')" class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> Ingrese apellido válido</p>
+                </mat-error>
             </div>
         </div>
         <div class="col-span-12">
@@ -25,6 +45,12 @@
                 <input type="email" id="email" formControlName="email"
                     class="bg-gray-50 border text-sm rounded-lg block w-full p-2.5" placeholder="Ingrese email.."
                     required>
+                <mat-error *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched" class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> Ingrese email</p>
+                </mat-error>
+                <mat-error *ngIf="form.get('email')?.hasError('pattern')" class="text-red-500 text-sm">
+                    <p><span class="font-extrabold">Aviso!</span> Ingrese mail válido</p>
+                </mat-error>
             </div>
         </div>
         <div class="col-span-12">
@@ -36,6 +62,10 @@
                 <option>Brasil</option>
                 <option>Uruguay</option>
             </select>
+            <mat-error *ngIf="form.get('selectPais')?.hasError('required') && form.get('selectPais')?.touched"
+                class="text-red-500 text-sm">
+                <p><span class="font-extrabold">Aviso!</span> Ingrese pais</p>
+            </mat-error>
         </div>
         <div class="col-span-12 mt-8 mb-6 w-full text-center">
             <ng-container *ngIf="form.valid">
