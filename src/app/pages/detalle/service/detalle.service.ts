@@ -14,6 +14,10 @@ export class DetalleService {
     const producto = recetas.filter(f =>
       f.titulo.marca1.toLowerCase().includes(marca) || f.titulo.marca2.toLowerCase().includes(marca)
     );
+    if (producto.length == 0){
+      throw new Error("No hay producto");
+      
+    }
     return producto
   }
 }

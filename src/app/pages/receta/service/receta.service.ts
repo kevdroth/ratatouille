@@ -11,6 +11,10 @@ export class RecetaService {
   getReceta(id: number){
     const {recetas} = data
     const receta = recetas.filter(f => f.idReceta == id )
+    if (receta.length == 0){
+      throw new Error("No hay receta");
+      
+    }
     return receta
   }
 }

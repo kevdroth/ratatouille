@@ -13,7 +13,7 @@ export class DetalleComponent implements OnInit {
   marcaTitulo!: string;
   ig!: string;
   windowScrolled = false;
-  loader: boolean = false;
+  load: boolean = false;
 
   constructor(
     private detalleService: DetalleService,
@@ -22,18 +22,27 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.loadScrollBtn()
+    this.loadDetalle()
+  }
+
+  loadScrollBtn(){
     window.addEventListener('scroll', () => {
       this.windowScrolled = window.pageYOffset !== 0;
     });
+  }
+
+  loadDetalle(){
     this.activatedRoute.params
-      .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
-      .subscribe({
-        next: (tituloMarca) =>
-          (this.producto = this.detalleService.getProductos(tituloMarca)),
-        error: (err) => console.log(err),
-        complete: () => this.loader = true
-      });
-    this.setIg();
+    .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
+    .subscribe({
+      next: tituloMarca => {
+          this.producto = this.detalleService.getProductos(tituloMarca),
+          this.load = true
+      },
+      error: err => console.log(err),
+    });
+  this.setIg();
   }
 
   setIg() {

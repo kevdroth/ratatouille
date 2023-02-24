@@ -11,6 +11,7 @@ import { RecetaService } from './service/receta.service';
 export class RecetaComponent implements OnInit {
   receta!: any[];
   ingredientes!: any[];
+  load: boolean = false
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -24,11 +25,14 @@ export class RecetaComponent implements OnInit {
         map(({ idReceta }) => {
           return idReceta;
         })
-      )
-      .subscribe((value) => {
-        this.receta = this.recetaService.getReceta(value);
-        console.log('🚀 ~ receta', this.receta);
-      });
+      ).subscribe({
+        next: (value) => {
+          this.receta = this.recetaService.getReceta(value);
+          console.log('🚀 ~ receta', this.receta);
+          this.load = true
+        },
+        error: err => console.log(err),
+      })
   }
 
   home() {
