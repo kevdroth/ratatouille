@@ -20,9 +20,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="relative top-0 left-0 z-10 w-full mx-auto">
-                        <img class="bg-cover bg-center h-[500px] w-full mx-auto"
-                            [src]="'assets/images/' + p.imgReceta + '.jpg'" alt="">
+                    <div class="relative top-0 left-0 z-10 h-[500px] w-full mx-auto overflow-hidden">
+                        <img class="object-center object-cover hover:hidden h-full w-full mx-auto"
+                            [src]="'assets/images/' + p.imgReceta + '.jpg'" alt="" onmouseleave="document.getElementById('videoPlayer').play()">
+                        <video [muted]="'muted'"
+                            class="hover:scale-125 ease-in-out duration-1000  object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
+                            preload="auto" loop autoplay id="videoPlayer" [src]="'assets/images/' + p.videoReceta" type="video/mp4">
+                            <!-- <source class="bg-cover bg-center" [src]="'assets/images/' + p.videoReceta" type="video/mp4"> -->
+                        </video>
                         <div class="absolute grid grid-cols-12 gap-x-2 z-20 bottom-0 left-0 w-full">
                             <div class="col-span-4 rounded-tl-2xl h-10 rounded-tr-2xl bg-secondary flex justify-center items-center text-white w-full
                         mx-auto text-center">

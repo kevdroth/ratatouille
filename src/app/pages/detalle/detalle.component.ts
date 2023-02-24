@@ -38,6 +38,8 @@ export class DetalleComponent implements OnInit {
     .subscribe({
       next: tituloMarca => {
           this.producto = this.detalleService.getProductos(tituloMarca),
+          console.log("🚀 ~ producto:", this.producto)
+
           this.load = true
       },
       error: err => console.log(err),
