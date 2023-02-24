@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { RecetaComponent } from './pages/receta/receta.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { LegalesComponent } from './pages/legales/legales.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'registro',
     component: RegistroComponent,
+  },
+  {
+    path: 'legales',
+    component: LegalesComponent,
   },
   {
     path: '**',

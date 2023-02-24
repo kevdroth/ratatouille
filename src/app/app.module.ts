@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { LegalesComponent } from './pages/legales/legales.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     DetalleComponent,
     RecetaComponent,
     RegistroComponent,
+    LegalesComponent,
   ],
   imports: [
     CommonModule,
