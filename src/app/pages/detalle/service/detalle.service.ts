@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import data from '../../../../mockdata/data.json';
 
 @Injectable({
@@ -6,7 +7,7 @@ import data from '../../../../mockdata/data.json';
 })
 export class DetalleService {
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   getProductos(marca: string){
     const { recetas } = data;
