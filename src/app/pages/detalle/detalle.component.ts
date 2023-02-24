@@ -13,6 +13,7 @@ export class DetalleComponent implements OnInit {
   marcaTitulo!: string;
   ig!: string;
   windowScrolled = false;
+  loader: boolean = false;
 
   constructor(
     private detalleService: DetalleService,
@@ -29,8 +30,10 @@ export class DetalleComponent implements OnInit {
       .subscribe({
         next: (tituloMarca) =>
           (this.producto = this.detalleService.getProductos(tituloMarca)),
+        error: (err) => console.log(err),
+        complete: () => this.loader = true
       });
-    this.setIg()
+    this.setIg();
   }
 
   setIg() {
