@@ -4,10 +4,13 @@
             <div class="grid grid-cols-12 mx-auto">
                 <div class="col-span-12 sm:col-span-6 mx-auto w-full sm:w-auto self-center" data-aos-duration="700"
                     data-aos="fade-right">
-                    <div>
-                        <img [src]="'assets/images/'+r.imgReceta+'.jpg'" class="sm:h-[650px] w-full rounded-xl" alt="">
+                    <div class="sm:h-[750px] w-full rounded-xl overflow-hidden relative top-0 left-0 shadow-xl">
+                        <img [src]="'assets/images/'+r.imgReceta+'.jpg'" class="rounded-xl object-center object-cover hover:hidden h-full w-full mx-auto" alt="" onmouseleave="document.getElementById('videoPlayer').play()" >
+                        <video [muted]="'muted'"
+                            class="hover:scale-[1.15] ease-in-out duration-1000 object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
+                            preload="auto" loop autoplay id="videoPlayer" [src]="'assets/images/' + r.videoReceta" type="video/mp4">
+                        </video>
                     </div>
-
                 </div>
                 <div class="col-span-12 sm:col-span-6 mx-auto my-5" data-aos-duration="700" data-aos="fade-left">
                     <div class="grid grid-cols-12 mx-5">

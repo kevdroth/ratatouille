@@ -11,35 +11,38 @@
                 </div>
                 <div class="col-span-12 mx-auto md:col-span-6 lg:col-span-4 w-[80%] md:w-full" data-aos="zoom-in-up"
                     *ngFor="let p of producto">
-                    <div class="h-20 border border-primary bg-primary rounded-tl-2xl rounded-tr-2xl">
-                        <div class="flex justify-center items-center h-full text-white w-2/3 mx-auto text-center">
-                            <a [href]="'receta/'+p.idReceta">
-                                <h1 class="text-sm md:text-base">{{p.titulo.text1}} <span
-                                        class="font-extrabold">{{p.titulo.marca1}}</span> {{p.titulo.text2}} <span
-                                        class="font-extrabold">{{p.titulo.marca2}}</span></h1>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="relative top-0 left-0 z-10 h-[500px] w-full mx-auto overflow-hidden">
-                        <img class="object-center object-cover hover:hidden h-full w-full mx-auto"
-                            [src]="'assets/images/' + p.imgReceta + '.jpg'" alt="" onmouseleave="document.getElementById('videoPlayer').play()">
-                        <video [muted]="'muted'"
-                            class="hover:scale-125 ease-in-out duration-1000  object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
-                            preload="auto" loop autoplay id="videoPlayer" [src]="'assets/images/' + p.videoReceta" type="video/mp4">
-                            <!-- <source class="bg-cover bg-center" [src]="'assets/images/' + p.videoReceta" type="video/mp4"> -->
-                        </video>
-                        <div class="absolute grid grid-cols-12 gap-x-2 z-20 bottom-0 left-0 w-full">
-                            <div class="col-span-4 rounded-tl-2xl h-10 rounded-tr-2xl bg-secondary flex justify-center items-center text-white w-full
-                        mx-auto text-center">
+                    <div class="shadow-2xl">
+                        <div class="h-20 border border-primary bg-primary rounded-tl-2xl rounded-tr-2xl">
+                            <div class="flex justify-center items-center h-full text-white w-2/3 mx-auto text-center">
                                 <a [href]="'receta/'+p.idReceta">
-                                    <h1 class="text-xs">Ingredientes</h1>
+                                    <h1 class="text-sm md:text-base">{{p.titulo.text1}} <span
+                                            class="font-extrabold">{{p.titulo.marca1}}</span> {{p.titulo.text2}} <span
+                                            class="font-extrabold">{{p.titulo.marca2}}</span></h1>
                                 </a>
                             </div>
-                            <div class="col-span-4 rounded-tl-2xl h-10 rounded-tr-2xl bg-primary flex justify-center items-center text-white w-full
+                        </div>
+                        <div class="relative top-0 left-0 z-10 h-[550px] w-full mx-auto overflow-hidden">
+                            <img class="object-center object-cover hover:hidden h-full w-full mx-auto"
+                                [src]="'assets/images/' + p.imgReceta + '.jpg'" alt=""
+                                onmouseleave="document.getElementById('videoPlayer').play()">
+                            <video [muted]="'muted'"
+                                class="hover:scale-[1.15] ease-in-out duration-1000  object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
+                                preload="auto" loop autoplay id="videoPlayer" [src]="'assets/images/' + p.videoReceta"
+                                type="video/mp4">
+                            </video>
+                            <div class="absolute grid grid-cols-12 gap-x-2 z-20 bottom-0 left-0 w-full">
+                                <div class="col-span-4 rounded-tl-2xl h-10 rounded-tr-2xl bg-secondary flex justify-center items-center text-white w-full
                         mx-auto text-center">
-                                <a [href]="'receta/'+p.idReceta">
-                                    <h1 class="text-xs">Preparación</h1>
-                                </a>
+                                    <a [href]="'receta/'+p.idReceta">
+                                        <h1 class="text-xs">Ingredientes</h1>
+                                    </a>
+                                </div>
+                                <div class="col-span-4 rounded-tl-2xl h-10 rounded-tr-2xl bg-primary flex justify-center items-center text-white w-full
+                        mx-auto text-center">
+                                    <a [href]="'receta/'+p.idReceta">
+                                        <h1 class="text-xs">Preparación</h1>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
