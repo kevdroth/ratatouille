@@ -16,7 +16,7 @@ export class RecetaComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private recetaService: RecetaService,
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -35,8 +35,8 @@ export class RecetaComponent implements OnInit {
       })
   }
 
-  home() {
-    this.router.navigateByUrl('home');
+  back() {
+    window.history.back();
   }
 
   ngOnDestroy(): void {}

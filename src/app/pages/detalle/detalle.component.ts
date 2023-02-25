@@ -1,4 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  Input,
+  OnInit,
+  ChangeDetectorRef,
+} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DetalleService } from './service/detalle.service';
 import { map, tap } from 'rxjs';
@@ -22,29 +28,31 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.loadScrollBtn()
-    this.loadDetalle()
+    this.loadScrollBtn();
+    this.loadDetalle();
   }
 
-  loadScrollBtn(){
+  ngOnDestroy(): void {}
+
+  loadScrollBtn() {
     window.addEventListener('scroll', () => {
       this.windowScrolled = window.pageYOffset !== 0;
     });
   }
 
-  loadDetalle(){
+  loadDetalle() {
     this.activatedRoute.params
-    .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
-    .subscribe({
-      next: tituloMarca => {
+      .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
+      .subscribe({
+        next: (tituloMarca) => {
           this.producto = this.detalleService.getProductos(tituloMarca),
-          console.log("🚀 ~ producto:", this.producto)
-
-          this.load = true
-      },
-      error: err => console.log(err),
-    });
-  this.setIg();
+            console.log('🚀 ~ producto:', this.producto);
+          this.load = true;
+        },
+        error: (err) => console.log(err),
+        complete: () => console.log('complete')
+      });
+    this.setIg();
   }
 
   setIg() {

@@ -8,7 +8,7 @@
                         <img [src]="'assets/images/'+r.imgReceta+'.jpg'" class="rounded-xl object-center object-cover hover:hidden h-full w-full mx-auto" alt="" onmouseleave="document.getElementById('videoPlayer').play()" >
                         <video [muted]="'muted'"
                             class="hover:scale-[1.15] ease-in-out duration-1000 object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
-                            preload="auto" loop autoplay id="videoPlayer" [src]="'assets/images/' + r.videoReceta" type="video/mp4">
+                            preload="auto" loop id="videoPlayer" onmouseleave="pause()" onmouseover="play()" [src]="'assets/images/' + r.videoReceta" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="col-span-12 mt-8 mb-6 w-full text-center" data-aos="zoom-in">
-                    <button (click)="home()"
+                    <button (click)="back()"
                         class="p-5 mx-auto rounded-full bg-primary hover:bg-secondary text-white font-extrabold w-40">Continuar</button>
                 </div>
             </div>
