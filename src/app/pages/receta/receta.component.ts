@@ -11,12 +11,12 @@ import { RecetaService } from './service/receta.service';
 export class RecetaComponent implements OnInit {
   receta!: any[];
   ingredientes!: any[];
-  load: boolean = false
+  load: boolean = false;
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private recetaService: RecetaService,
-    private router: Router,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -25,14 +25,21 @@ export class RecetaComponent implements OnInit {
         map(({ idReceta }) => {
           return idReceta;
         })
-      ).subscribe({
+      )
+      .subscribe({
         next: (value) => {
           this.receta = this.recetaService.getReceta(value);
           console.log('🚀 ~ receta', this.receta);
-          this.load = true
+          this.load = true;
         },
-        error: err => console.log(err),
-      })
+        error: (err) => console.log(err),
+        complete: () => {
+          setTimeout(() => {
+            
+            console.log('llegue');
+          }, 2000);
+        }
+      });
   }
 
   back() {

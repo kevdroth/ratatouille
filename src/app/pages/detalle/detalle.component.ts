@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DetalleService } from './service/detalle.service';
-import { map, tap } from 'rxjs';
+import { map, take, tap } from 'rxjs';
 
 @Component({
   selector: 'app-detalle',
@@ -44,15 +44,19 @@ export class DetalleComponent implements OnInit {
     this.activatedRoute.params
       .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
       .subscribe({
-        next: (tituloMarca) => {
-          this.producto = this.detalleService.getProductos(tituloMarca),
-            console.log('🚀 ~ producto:', this.producto);
+        next: (titulo) => {
+          this.producto = this.detalleService.getProductos(titulo);
+          console.log('🚀 ~ producto:', this.producto);
           this.load = true;
+          this.setIg();
         },
-        error: (err) => console.log(err),
-        complete: () => console.log('complete')
+        error: (err) => {
+          console.log(err)
+        },
+        complete: () => {
+          console.log('llegue')
+        },
       });
-    this.setIg();
   }
 
   setIg() {
