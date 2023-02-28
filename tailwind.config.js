@@ -15,6 +15,7 @@ module.exports = {
         'roboto': ['Roboto', 'sans-serif'],
         'slub': ['Roboto Slab', 'serif'],
         'fontspring': ['Fontspring', 'serif'],
+        'fontspring-bold': ['Fontspring', 'serif'],
       }
     },
   },

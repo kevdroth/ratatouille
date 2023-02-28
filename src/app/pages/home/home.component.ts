@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Marcas } from 'src/app/interfaces/product.interface';
+import { AppService } from '../../services/app.service';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  
+  marca: Marcas[] = []
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private service: AppService){}
 
   ngOnInit(): void {
-
+    this.marca = this.service.products().producto
   }
 
 }

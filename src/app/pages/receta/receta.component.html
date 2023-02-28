@@ -20,7 +20,7 @@
                         <div class="col-span-8 w-full text-center">
                             <h1 class="text-primary text-4xl lg:text-5xl">{{r.titulo.text1}} <span
                                     class="font-extrabold">{{r.titulo.marca1}}</span></h1>
-                            <div class="w-full my-1">
+                            <div class="w-full my-1" *ngIf="r.titulo.text2">
                                 <img src="assets/images/divide-title.png" alt="" class="w-1/3 mx-auto">
                             </div>
                             <h1 class="text-primary text-xl lg:text-2xl">{{r.titulo.text2}} <span
@@ -28,7 +28,8 @@
                         </div>
                         <div class="col-span-4 w-full relative top-5">
                             <img [src]="'assets/images/'+r.flotante2"
-                                class="h-[148px] w-[111px] sm:w-[116px] sm:h-[180px] mx-5 mt-5 absolute top-0" alt="">
+                                class="h-[148px] w-[111px] sm:w-[116px] sm:h-[180px] mx-5 mt-5 absolute top-0 object-contain"
+                                alt="">
                         </div>
                     </div>
                     <div class="mt-12 lg:mt-20">
@@ -36,12 +37,13 @@
                             <h1 class="text-secondary font-extrabold my-2">Ingredientes</h1>
                             <ul class="list-disc mx-5 text-gray-600">
                                 <li *ngFor="let p of r.ingredientes.propios"><span
-                                        class="font-extrabold text-xl text-secondary">{{p.producto}} {{p.cantidad}}</span>
-                                    </li>
+                                        class="font-extrabold text-xl text-secondary">{{p.producto}}
+                                        {{p.cantidad}}</span>
+                                </li>
                                 <li *ngFor="let n of r.ingredientes.noPropios">{{n.cantidad}} {{n.producto}}</li>
                             </ul>
                         </div>
-                        <div class="w-full my-3">
+                        <div class="w-full my-3" *ngIf="r.preparacion">
                             <img src="assets/images/divide.png" alt="" class="mx-auto">
                         </div>
                         <div class="col-span-12 my-5 mx-5" *ngIf="r.preparacion">

@@ -23,19 +23,9 @@
         <h1 class="text-2xl text-gray-500">Elegí recetas con:</h1>
     </div>
     <div class="grid grid-cols-12 mx-auto w-full justify-items-center my-4 gap-y-5">
-        <div class="col-span-12">
-            <a [href]="'detalle/Milka'">
-                <img src="assets/images/logo-milka.png" class="h-20 w-52" alt="" data-aos="zoom-in-up">
-            </a>
-        </div>
-        <div class="col-span-12">
-            <a [href]="'detalle/Royal'">
-                <img src="assets/images/logo-royal.png" class="h-20 w-52" alt="" data-aos="zoom-in-up">
-            </a>
-        </div>
-        <div class="col-span-12">
-            <a [href]="'detalle/Oreo'">
-                <img src="assets/images/logo-oreo.png" class="h-20 w-52" alt="" data-aos="zoom-in-up">
+        <div class="col-span-12" *ngFor="let m of marca">
+            <a [href]="'detalle/'+m.slug">
+                <img [src]="'assets/images/'+m.logo" class="h-20 w-52 object-contain" alt="" data-aos="zoom-in-up">
             </a>
         </div>
     </div>

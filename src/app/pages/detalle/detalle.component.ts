@@ -8,6 +8,8 @@ import {
 import { ActivatedRoute, Router } from '@angular/router';
 import { DetalleService } from './service/detalle.service';
 import { map, take, tap } from 'rxjs';
+import { AppService } from '../../services/app.service';
+import { Marcas } from '../../interfaces/product.interface';
 
 @Component({
   selector: 'app-detalle',
@@ -20,11 +22,13 @@ export class DetalleComponent implements OnInit {
   ig!: string;
   windowScrolled = false;
   load: boolean = false;
+  marca!: Marcas[]
 
   constructor(
     private detalleService: DetalleService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private service: AppService
   ) {}
 
   ngOnInit(): void {
