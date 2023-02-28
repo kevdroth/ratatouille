@@ -5,10 +5,10 @@
                 <div class="col-span-12 sm:col-span-6 mx-auto w-full sm:w-auto self-start my-5" data-aos-duration="700"
                     data-aos="fade-right">
                     <div class="sm:h-[750px] w-full rounded-xl overflow-hidden relative top-0 left-0 shadow-xl">
-                        <img [src]="'assets/images/'+r.imgReceta+'.jpg'"
+                        <img [src]="r.imgReceta?.length ? 'assets/images/' + r.imgReceta + '.jpg' : 'assets/images/default.svg'"
                             class="rounded-xl object-center object-cover hover:hidden h-full w-full mx-auto" alt=""
                             onmouseleave="document.getElementById('videoPlayer').play()">
-                        <video [muted]="'muted'"
+                        <video [muted]="'muted'" *ngIf="r.imgReceta"
                             class="hover:scale-[1.15] ease-in-out duration-1000 object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
                             preload="auto" loop id="videoPlayer" onmouseleave="pause()" onmouseover="play()"
                             [src]="'assets/images/' + r.videoReceta" type="video/mp4">
@@ -20,7 +20,7 @@
                         <div class="col-span-8 w-full text-center">
                             <h1 class="text-primary text-4xl lg:text-5xl">{{r.titulo.text1}} <span
                                     class="font-extrabold">{{r.titulo.marca1}}</span></h1>
-                            <div class="w-full">
+                            <div class="w-full my-1">
                                 <img src="assets/images/divide-title.png" alt="" class="w-1/3 mx-auto">
                             </div>
                             <h1 class="text-primary text-xl lg:text-2xl">{{r.titulo.text2}} <span

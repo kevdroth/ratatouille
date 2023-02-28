@@ -1002,65 +1002,12 @@
   ],
   "recetas": [
     {
-      "idReceta": 2,
-      "titulo": {
-        "text1": "Bizcochuelo",
-        "marca1": "Royal",
-        "text2": "con",
-        "marca2": "Milka Blanco"
-      },
-      "ingredientes": {
-        "propios": [
-          {
-            "producto": "1 Bizcochuelo Royal",
-            "cantidad": ""
-          },
-          {
-            "producto": "4 Chocolates Milka Blanco por",
-            "cantidad": "55 g."
-          }
-        ],
-        "noPropios": [
-          {
-            "producto": "de leche",
-            "cantidad": "200ml"
-          },
-          {
-            "producto": "Huevos",
-            "cantidad": "3"
-          },
-          {
-            "producto": "Esencia de vainilla",
-            "cantidad": ""
-          },
-          {
-            "producto": "de pasta de mani",
-            "cantidad": "1 pote"
-          },
-          {
-            "producto": "de crema de leche",
-            "cantidad": "200 ml"
-          }
-        ]
-      },
-      "flotante2": "pack2.png",
-      "flotante3": "brillo.png",
-      "flotanteMascara": "mascara-fondo.png",
-      "qr": "qr-2.png",
-      "imgReceta": "",
-      "videoReceta": "biscocho-royal.mp4",
-      "coordenadas": {
-        "x": 100,
-        "y": 200
-      }
-    },
-    {
       "idReceta": 3,
       "titulo": {
         "text1": "Brigadeiros",
         "marca1": "Oreo",
-        "text2": "pasadas por",
-        "marca2": "Lincoln picadas"
+        "text2": "con",
+        "marca2": "Lincoln"
       },
       "preparacion": [
         {
@@ -1098,6 +1045,10 @@
           {
             "producto": "1 paquete de Lincoln",
             "cantidad": ""
+          },
+          {
+            "producto": "2 Chocolates Cadbury 3 Sue\u00f1os por",
+            "cantidad": "80g."
           }
         ],
         "noPropios": [
@@ -1126,9 +1077,9 @@
       "idReceta": 4,
       "titulo": {
         "text1": "Bud\u00edn de Naranja con",
-        "marca1": "Oreo",
-        "text2": "con polvo para hornear",
-        "marca2": "Royal "
+        "marca1": "Mini Oreo",
+        "text2": "y",
+        "marca2": "Milka "
       },
       "preparacion": [
         {
@@ -1218,9 +1169,9 @@
     {
       "idReceta": 5,
       "titulo": {
-        "text1": "Cheese Cake con chocolate",
-        "marca1": "Milka",
-        "text2": "con base",
+        "text1": "Cheesecake con",
+        "marca1": "Milka Leche",
+        "text2": "Y ",
         "marca2": "Oreo Golden"
       },
       "preparacion": [
@@ -1264,6 +1215,10 @@
           {
             "producto": "1 Chocolate Milka Leche por",
             "cantidad": "150 g."
+          },
+          {
+            "producto": "1 Chocolate Cadbury 3 Sue\u00f1os por",
+            "cantidad": "80 g."
           }
         ],
         "noPropios": [
@@ -1290,10 +1245,6 @@
           {
             "producto": "de leche",
             "cantidad": "100 ml"
-          },
-          {
-            "producto": "Esencia de vainilla",
-            "cantidad": ""
           },
           {
             "producto": "de harina",
@@ -1313,73 +1264,12 @@
       }
     },
     {
-      "idReceta": 6,
-      "titulo": {
-        "text1": "Cheese Cake",
-        "marca1": "Lincoln",
-        "text2": "",
-        "marca2": ""
-      },
-      "ingredientes": {
-        "propios": [
-          {
-            "producto": "2 paquetes de Lincoln",
-            "cantidad": ""
-          }
-        ],
-        "noPropios": [
-          {
-            "producto": "de manteca",
-            "cantidad": "100 g"
-          },
-          {
-            "producto": "de queso crema",
-            "cantidad": "800 g"
-          },
-          {
-            "producto": "de az\u00facar",
-            "cantidad": "200 g"
-          },
-          {
-            "producto": "de crema de leche",
-            "cantidad": "300 ml"
-          },
-          {
-            "producto": "6 huevos",
-            "cantidad": ""
-          },
-          {
-            "producto": "de leche",
-            "cantidad": "100 ml"
-          },
-          {
-            "producto": "de pasta de maní",
-            "cantidad": "1 pote"
-          },
-          {
-            "producto": "de harina",
-            "cantidad": "50 g"
-          }
-        ]
-      },
-      "flotante2": "pack6.png",
-      "flotante3": "brillo.png",
-      "flotanteMascara": "mascara-fondo.png",
-      "qr": "qr-6.png",
-      "imgReceta": "",
-      "videoReceta": "cheese-cake-mantecol.mp4",
-      "coordenadas": {
-        "x": 100,
-        "y": 200
-      }
-    },
-    {
       "idReceta": 7,
       "titulo": {
-        "text1": "Cheese Cake",
-        "marca1": "Oreo",
-        "text2": "",
-        "marca2": ""
+        "text1": "Cheesecake de",
+        "marca1": "Oreo dorada ",
+        "text2": "con",
+        "marca2": "Cadbury 3 Sue\u00f1os"
       },
       "preparacion": [
         {
@@ -1418,6 +1308,10 @@
           {
             "producto": "3 paquetes de Oreo",
             "cantidad": ""
+          },
+          {
+            "producto": "1 Chocolate Cadbury 3 Sue\u00f1os por",
+            "cantidad": "80g."
           }
         ],
         "noPropios": [
@@ -1444,10 +1338,6 @@
           {
             "producto": "de leche",
             "cantidad": "100 ml"
-          },
-          {
-            "producto": "Esencia de vainilla",
-            "cantidad": ""
           },
           {
             "producto": "de harina",
@@ -1547,9 +1437,9 @@
       "idReceta": 9,
       "titulo": {
         "text1": "Conitos",
-        "marca1": "Oreo",
-        "text2": "cubiertos con chocolate",
-        "marca2": "Milka"
+        "marca1": "Oreo ",
+        "text2": "con",
+        "marca2": "chocolate Milka Leche"
       },
       "preparacion": [
         {
@@ -1606,9 +1496,9 @@
       "idReceta": 10,
       "titulo": {
         "text1": " Cookies rellenas de",
-        "marca1": "Oreo",
-        "text2": "con polvo",
-        "marca2": "Royal"
+        "marca1": "Oreo ",
+        "text2": "",
+        "marca2": ""
       },
       "preparacion": [
         {
@@ -1623,7 +1513,7 @@
         },
         {
           "paso": "3",
-          "descripcion": "Por último agregar los ingredientes secos: la harina, una cucharadita de polvo para hornear Royal y el chocolate semi amargo picado.",
+          "descripcion": "Por último agregar los ingredientes secos: la harina, una cucharadita de polvo para hornear Royal y el chocolate Cadbury picado.",
           "receta_id": "10"
         },
         {
@@ -1649,7 +1539,11 @@
             "cantidad": "118g"
           },
           {
-            "producto": "1 cucharadita de polvo para hornear Royal",
+            "producto": "1 Chocolate Cadbury 3 Sue\u00f1os por",
+            "cantidad": "80g"
+          },
+          {
+            "producto": "1 polvo de hornear Royal",
             "cantidad": ""
           }
         ],
@@ -1669,14 +1563,6 @@
           {
             "producto": "de harina",
             "cantidad": "200 g"
-          },
-          {
-            "producto": "barras de chocolate semi amargo",
-            "cantidad": "4"
-          },
-          {
-            "producto": "Esencia de vainilla",
-            "cantidad": ""
           }
         ]
       },
@@ -1692,59 +1578,10 @@
       }
     },
     {
-      "idReceta": 11,
-      "titulo": {
-        "text1": "Copitas de postre",
-        "marca1": "Royal",
-        "text2": "con Chantillí y pasta de maní",
-        "marca2": ""
-      },
-      "ingredientes": {
-        "propios": [
-          {
-            "producto": "1 postre Royal de chocolate",
-            "cantidad": ""
-          }
-        ],
-        "noPropios": [
-          {
-            "producto": "1 lt de leche",
-            "cantidad": ""
-          },
-          {
-            "producto": "de dulce de leche repostero",
-            "cantidad": "200 ml"
-          },
-          {
-            "producto": "de pasta de maní",
-            "cantidad": "1 pote"
-          },
-          {
-            "producto": "Esencia de vainilla",
-            "cantidad": ""
-          },
-          {
-            "producto": "de az\u00facar",
-            "cantidad": "80 g"
-          }
-        ]
-      },
-      "flotante2": "pack11.png",
-      "flotante3": "brillo.png",
-      "flotanteMascara": "mascara-fondo.png",
-      "qr": "qr-11.png",
-      "imgReceta": "",
-      "videoReceta": "copitas-royal.mp4",
-      "coordenadas": {
-        "x": 100,
-        "y": 200
-      }
-    },
-    {
       "idReceta": 12,
       "titulo": {
-        "text1": "Funge de chocolate blanco",
-        "marca1": "Milka",
+        "text1": "Funge",
+        "marca1": "Milka Blanco ",
         "text2": "con",
         "marca2": "Oreo"
       },
@@ -1802,10 +1639,10 @@
     {
       "idReceta": 13,
       "titulo": {
-        "text1": "Hot Cake",
+        "text1": "Hot Cakes",
         "marca1": "Oreo ",
-        "text2": "con polvo para hornear",
-        "marca2": "Royal con Cadbury 3 Sue\u00f1os"
+        "text2": "con",
+        "marca2": "Cadbury 3 Sue\u00f1os"
       },
       "preparacion": [
         {
@@ -1840,7 +1677,7 @@
             "cantidad": "80g"
           },
           {
-            "producto": "1 cucharadita de polvo para hornear Royal",
+            "producto": "1 polvo de hornear Royal",
             "cantidad": ""
           }
         ],
@@ -1885,8 +1722,8 @@
     {
       "idReceta": 14,
       "titulo": {
-        "text1": "Muffins de Bizcochuelo",
-        "marca1": "Royal",
+        "text1": "Muffins de",
+        "marca1": "Bizcochuelo Royal",
         "text2": "con coraz\u00f3n de",
         "marca2": "Oreo y frosting de Mini Oreo"
       },
@@ -1954,57 +1791,12 @@
       }
     },
     {
-      "idReceta": 15,
-      "titulo": {
-        "text1": "Palitos helados",
-        "marca1": "Milka",
-        "text2": "",
-        "marca2": ""
-      },
-      "ingredientes": {
-        "propios": [
-          {
-            "producto": "1 Chocolate Milka Leche por",
-            "cantidad": "150g"
-          }
-        ],
-        "noPropios": [
-          {
-            "producto": "de crema de leche",
-            "cantidad": "300 g"
-          },
-          {
-            "producto": "de pasta de maní",
-            "cantidad": "1 pote"
-          },
-          {
-            "producto": "de esencia de vainilla",
-            "cantidad": "1 chorrito"
-          },
-          {
-            "producto": "de az\u00facar",
-            "cantidad": "80 g"
-          }
-        ]
-      },
-      "flotante2": "pack15.png",
-      "flotante3": "brillo.png",
-      "flotanteMascara": "mascara-fondo.png",
-      "qr": "qr-15.png",
-      "imgReceta": "",
-      "videoReceta": "palitos-helados-mantecol.mp4",
-      "coordenadas": {
-        "x": 100,
-        "y": 200
-      }
-    },
-    {
       "idReceta": 16,
       "titulo": {
         "text1": "Tarta",
-        "marca1": "Oreo Golden y Cadbury Yoghurt",
-        "text2": "con Dulce de leche, Frutillas y Chantilly",
-        "marca2": " "
+        "marca1": "Oreo Golden",
+        "text2": "con",
+        "marca2": "Chocolate Cadbury Yoghurt"
       },
       "ingredientes": {
         "propios": [
@@ -2130,10 +1922,10 @@
     {
       "idReceta": 18,
       "titulo": {
-        "text1": "Torta",
-        "marca1": "Lincoln duquesa",
-        "text2": "con postre",
-        "marca2": "Royal de chocolate"
+        "text1": "Torta Duquesa con",
+        "marca1": "Lincoln",
+        "text2": "y postre",
+        "marca2": " Royal de chocolate"
       },
       "preparacion": [
         {
@@ -2206,10 +1998,10 @@
     {
       "idReceta": 19,
       "titulo": {
-        "text1": "Torta Mousse",
-        "marca1": "Milka Oreo",
-        "text2": "con base",
-        "marca2": "Lincoln"
+        "text1": "Torta Mousse de Dulce de Leche con",
+        "marca1": "Lincoln",
+        "text2": "y ",
+        "marca2": " Milka Oreo"
       },
       "preparacion": [
         {
@@ -2278,9 +2070,9 @@
       "idReceta": 20,
       "titulo": {
         "text1": "Triffles de",
-        "marca1": "Oreo y dulce de leche",
-        "text2": "con crema y",
-        "marca2": "Cadbury Yoghurt"
+        "marca1": "Oreo",
+        "text2": "y dulce de leche Con crema de Frutillas y ",
+        "marca2": " Cadbury Yoghurt"
       },
       "preparacion": [
         {
@@ -2344,9 +2136,10 @@
       "idReceta": 21,
       "titulo": {
         "text1": "Volc\u00e1n de chocolate",
-        "marca1": "Milka Blanco y Oreo",
-        "text2": "con coraz\u00f3n de dulce de leche",
-        "marca2": ""
+        "marca1": "Milka Blanco",
+        "text2": "y ",
+        "marca2": " Oreo",
+        "text3": "con coraz\u00f3n de dulce de leche"
       },
       "preparacion": [
         {
