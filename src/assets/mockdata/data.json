@@ -1010,21 +1010,31 @@
         "marca2": "Lincoln"
       },
       "preparacion": [
-         {
-            "paso": "Poner en una cacerola le leche condensada con el chocolate picado y la manteca."
-         },
-         {
-            "paso": "Llevar al fuego hasta que se derrita bien todo siempre revolviendo."
-         },
-         {
-            "paso": "Agregar el paquete de Oreo partidas con la mano."
-         },
-         {
-            "paso": "Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos."
-         },
-         {
-            "paso": "Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!"
-         }
+        {
+          "paso": "1",
+          "descripcion": "Poner en una cacerola le leche condensada con el chocolate picado y la manteca.",
+          "receta_id": "3"
+        },
+        {
+          "paso": "2",
+          "descripcion": "Llevar al fuego hasta que se derrita bien todo siempre revolviendo.",
+          "receta_id": "3"
+        },
+        {
+          "paso": "3",
+          "descripcion": "Agregar el paquete de Oreo partidas con la mano.",
+          "receta_id": "3"
+        },
+        {
+          "paso": "4",
+          "descripcion": "Cuando espesa, retirar del fuego, poner en un bowl y llevar a la heladera 30 minutos.",
+          "receta_id": "3"
+        },
+        {
+          "paso": "5",
+          "descripcion": "Luego hacer pelotitas del mismo tamaño y pasar por Lincoln picadas!",
+          "receta_id": "3"
+        }
       ],
       "ingredientes": {
         "propios": [
@@ -1073,24 +1083,36 @@
       },
       "preparacion": [
         {
-           "paso": "Mezclar el azúcar con el aceite y ralladura de 2 naranjas."
+          "paso": "1",
+          "descripcion": "Mezclar el azúcar con el aceite y ralladura de 2 naranjas.",
+          "receta_id": "4"
         },
         {
-           "paso": "Agregar los huevos."
+          "paso": "2",
+          "descripcion": "Agregar los huevos.",
+          "receta_id": "4"
         },
         {
-           "paso": "Incorporar la harina y el polvo para hornear y por último agregar un paquete de Mini Oreo."
+          "paso": "3",
+          "descripcion": "Incorporar la harina y el polvo para hornear y por último agregar un paquete de Mini Oreo.",
+          "receta_id": "4"
         },
         {
-           "paso": "Poner en una budinera enmantecada y llevar a horno mínimo (160 grados) durante 40 minutos."
+          "paso": "4",
+          "descripcion": "Poner en una budinera enmantecada y llevar a horno mínimo (160 grados) durante 40 minutos.",
+          "receta_id": "4"
         },
         {
-           "paso": "Derretir 100 gr de chocolate Milka, agregar 100 gr de dulce de leche repostero y decorar por arriba con manga y pico."
+          "paso": "5",
+          "descripcion": "Derretir 100 gr de chocolate Milka, agregar 100 gr de dulce de leche repostero y decorar por arriba con manga y pico.",
+          "receta_id": "4"
         },
         {
-           "paso": "Agregar más Mini Oreo para completar la decoración."
+          "paso": "6",
+          "descripcion": "Agregar más Mini Oreo para completar la decoración.",
+          "receta_id": "4"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1154,24 +1176,36 @@
       },
       "preparacion": [
         {
-           "paso": "Triturar las galletitas, agregar la manteca derretida y poner en la base de un molde desmoldable de 26 cm de diámetro (puede ser de 24, 28 o 30 va a cambiar la altura)."
+          "paso": "1",
+          "descripcion": "Triturar las galletitas, agregar la manteca derretida y poner en la base de un molde desmoldable de 26 cm de diámetro (puede ser de 24, 28 o 30 va a cambiar la altura).",
+          "receta_id": "5"
         },
         {
-           "paso": "Por otro lado, batir (puede ser a mano) el queso crema con el azúcar, la crema de leche, y un chorrito de esencia de vainilla."
+          "paso": "2",
+          "descripcion": "Por otro lado, batir (puede ser a mano) el queso crema con el azúcar, la crema de leche, y un chorrito de esencia de vainilla.",
+          "receta_id": "5"
         },
         {
-           "paso": "Colocar la leche con el Chocolate Milka y derretir a baño maría, luego agregar a la preparación anterior."
+          "paso": "3",
+          "descripcion": "Colocar la leche con el Chocolate Milka y derretir a baño maría, luego agregar a la preparación anterior.",
+          "receta_id": "5"
         },
         {
-           "paso": "Por último incorporar la harina. Mezclar todo bien y volcar sobre la base de galletitas."
+          "paso": "4",
+          "descripcion": "Por último incorporar la harina. Mezclar todo bien y volcar sobre la base de galletitas.",
+          "receta_id": "5"
         },
         {
-           "paso": "Llevar a horno mínimo, 150 grados durante una hora. O a horno fuerte por media hora y dejar otra media hora con el horno apagado."
+          "paso": "5",
+          "descripcion": "Llevar a horno mínimo, 150 grados durante una hora. O a horno fuerte por media hora y dejar otra media hora con el horno apagado.",
+          "receta_id": "5"
         },
         {
-           "paso": "Llevar a la heladera una hora, desmoldar y decorar con dulce de leche y chocolates Cadbury 3 Sueños."
+          "paso": "6",
+          "descripcion": "Llevar a la heladera una hora, desmoldar y decorar con dulce de leche y chocolates Cadbury 3 Sueños.",
+          "receta_id": "5"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1239,24 +1273,36 @@
       },
       "preparacion": [
         {
-           "paso": "Triturar las galletitas, agregar la manteca derretida y poner en la base de un molde desmoldable de 26 cm de diámetro (puede ser de 24, 28 o 30 va a cambiar la altura)."
+          "paso": "1",
+          "descripcion": "Triturar las galletitas, agregar la manteca derretida y poner en la base de un molde desmoldable de 26 cm de diámetro (puede ser de 24, 28 o 30 va a cambiar la altura).",
+          "receta_id": "7"
         },
         {
-           "paso": "Por otro lado, batir (puede ser a mano) el queso crema con el azúcar, la crema de leche, y un chorrito de esencia de vainilla."
+          "paso": "2",
+          "descripcion": "Por otro lado, batir (puede ser a mano) el queso crema con el azúcar, la crema de leche, y un chorrito de esencia de vainilla.",
+          "receta_id": "7"
         },
         {
-           "paso": "Colocar la leche con el Chocolate Milka y derretir a baño maría, luego agregar a la preparación anterior."
+          "paso": "3",
+          "descripcion": "Colocar la leche con el Chocolate Milka y derretir a baño maría, luego agregar a la preparación anterior.",
+          "receta_id": "7"
         },
         {
-           "paso": "Por último incorporar la harina. Mezclar todo bien y volcar sobre la base de galletitas."
+          "paso": "4",
+          "descripcion": "Por último incorporar la harina. Mezclar todo bien y volcar sobre la base de galletitas.",
+          "receta_id": "7"
         },
         {
-           "paso": "Llevar a horno mínimo, 150 grados durante una hora. O a horno fuerte por media hora y dejar otra media hora con el horno apagado."
+          "paso": "5",
+          "descripcion": "Llevar a horno mínimo, 150 grados durante una hora. O a horno fuerte por media hora y dejar otra media hora con el horno apagado.",
+          "receta_id": "7"
         },
         {
-           "paso": "Llevar a la heladera una hora, desmoldar y decorar con dulce de leche y chocolates Cadbury 3 Sueños."
+          "paso": "6",
+          "descripcion": "Llevar a la heladera una hora, desmoldar y decorar con dulce de leche y chocolates Cadbury 3 Sueños.",
+          "receta_id": "7"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1320,24 +1366,36 @@
       },
       "preparacion": [
         {
-           "paso": "Batir la crema de leche con el dulce de leche repostero."
+          "paso": "1",
+          "descripcion": "Batir la crema de leche con el dulce de leche repostero.",
+          "receta_id": "8"
         },
         {
-           "paso": "Poner en la base de un molde galletitas Oreo enteras cubriendo toda la superficie y en los laterales armando 'la corona', si no entran justo podés partir la última galletita para que quede bien firme. (Tienen que trabarse entre ellas para que no se caigan)."
+          "paso": "2",
+          "descripcion": "Poner en la base de un molde galletitas Oreo enteras cubriendo toda la superficie y en los laterales armando 'la corona', si no entran justo podés partir la última galletita para que quede bien firme. (Tienen que trabarse entre ellas para que no se caigan).",
+          "receta_id": "8"
         },
         {
-           "paso": "Colocar la mitad de la crema sobre las galletitas."
+          "paso": "3",
+          "descripcion": "Colocar la mitad de la crema sobre las galletitas.",
+          "receta_id": "8"
         },
         {
-           "paso": "Agregar una capa más de galletitas en el medio y cubrir por arriba con toda la crema que queda."
+          "paso": "4",
+          "descripcion": "Agregar una capa más de galletitas en el medio y cubrir por arriba con toda la crema que queda.",
+          "receta_id": "8"
         },
         {
-           "paso": "Decorar con mini Oreo por arriba y BIS."
+          "paso": "5",
+          "descripcion": "Decorar con mini Oreo por arriba y BIS.",
+          "receta_id": "8"
         },
         {
-           "paso": "Llevar al freezer una hora o 3 horas de heladera."
+          "paso": "6",
+          "descripcion": "Llevar al freezer una hora o 3 horas de heladera.",
+          "receta_id": "8"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1385,18 +1443,26 @@
       },
       "preparacion": [
         {
-           "paso": "Poner el dulce de leche en una manga y hacer la forma del conito sobre una galletita."
+          "paso": "1",
+          "descripcion": "Poner el dulce de leche en una manga y hacer la forma del conito sobre una galletita.",
+          "receta_id": "9"
         },
         {
-           "paso": "Derretir el chocolate Milka a baño maría."
+          "paso": "2",
+          "descripcion": "Derretir el chocolate Milka a baño maría.",
+          "receta_id": "9"
         },
         {
-           "paso": "Bañar los conitos."
+          "paso": "3",
+          "descripcion": "Bañar los conitos.",
+          "receta_id": "9"
         },
         {
-           "paso": "Llevar a la heladera mínimo una hora."
+          "paso": "4",
+          "descripcion": "Llevar a la heladera mínimo una hora.",
+          "receta_id": "9"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1436,24 +1502,36 @@
       },
       "preparacion": [
         {
-           "paso": "Mezclar con una espátula o cuchara de madera la manteca (a temperatura ambiente, si está fría ponerla unos segundos en el microondas) con el azúcar y un chorrito de esencia de vainilla."
+          "paso": "1",
+          "descripcion": "Mezclar con una espátula o cuchara de madera la manteca (a temperatura ambiente, si está fría ponerla unos segundos en el microondas) con el azúcar y un chorrito de esencia de vainilla.",
+          "receta_id": "10"
         },
         {
-           "paso": "Agregar un huevo."
+          "paso": "2",
+          "descripcion": "Agregar un huevo.",
+          "receta_id": "10"
         },
         {
-           "paso": "Por último agregar los ingredientes secos: la harina, una cucharadita de polvo para hornear Royal y el chocolate Cadbury picado."
+          "paso": "3",
+          "descripcion": "Por último agregar los ingredientes secos: la harina, una cucharadita de polvo para hornear Royal y el chocolate Cadbury picado.",
+          "receta_id": "10"
         },
         {
-           "paso": "Formar una masa, hacer con la mano pelotitas del mismo tamaño, aplastarlas y poner una galletita Oreo adentro y volver a darle la forma de cookie."
+          "paso": "4",
+          "descripcion": "Formar una masa, hacer con la mano pelotitas del mismo tamaño, aplastarlas y poner una galletita Oreo adentro y volver a darle la forma de cookie.",
+          "receta_id": "10"
         },
         {
-           "paso": "Colocar en una placa enmantecada."
+          "paso": "5",
+          "descripcion": "Colocar en una placa enmantecada.",
+          "receta_id": "10"
         },
         {
-           "paso": "Llevar al horno medio (180 grados) entre 15 y 20 minutos. Cuando se empiezann a dorar los bordes ya están listas!"
+          "paso": "6",
+          "descripcion": "Llevar al horno medio (180 grados) entre 15 y 20 minutos. Cuando se empiezann a dorar los bordes ya están listas!",
+          "receta_id": "10"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1509,18 +1587,26 @@
       },
       "preparacion": [
         {
-           "paso": "Poner en el microondas el chocolate blanco con la leche condensada dos minutos."
+          "paso": "1",
+          "descripcion": "Poner en el microondas el chocolate blanco con la leche condensada dos minutos.",
+          "receta_id": "12"
         },
         {
-           "paso": "Revolver hasta que esté bien integrado, poner en un molde, pueden ser cuadrados de 20x20 o redondos de 24 o 22 de diámetro."
+          "paso": "2",
+          "descripcion": "Revolver hasta que esté bien integrado, poner en un molde, pueden ser cuadrados de 20x20 o redondos de 24 o 22 de diámetro.",
+          "receta_id": "12"
         },
         {
-           "paso": "Colocar por arriba las galletitas Oreo partidas con la mano y llevar a la heladera mínimo una hora."
+          "paso": "3",
+          "descripcion": "Colocar por arriba las galletitas Oreo partidas con la mano y llevar a la heladera mínimo una hora.",
+          "receta_id": "12"
         },
         {
-           "paso": "Cortar en cuadraditos y servir."
+          "paso": "4",
+          "descripcion": "Cortar en cuadraditos y servir.",
+          "receta_id": "12"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1560,18 +1646,26 @@
       },
       "preparacion": [
         {
-           "paso": "Poner la leche, el huevo, el azúcar, la harina y el polvo para hornear en la licuadora."
+          "paso": "1",
+          "descripcion": "Poner la leche, el huevo, el azúcar, la harina y el polvo para hornear en la licuadora.",
+          "receta_id": "13"
         },
         {
-           "paso": "Licuar bien hasta que se integre bien todo y agregar las Oreo partidas con la mano."
+          "paso": "2",
+          "descripcion": "Licuar bien hasta que se integre bien todo y agregar las Oreo partidas con la mano.",
+          "receta_id": "13"
         },
         {
-           "paso": "Colocar una sartén antiadherente en el fuego con un poco de manteca para lubricarla y verter la preparación anterior con un cucharón, cocinar vuelta y vuelta a fuego medio. Volver a repetir."
+          "paso": "3",
+          "descripcion": "Colocar una sartén antiadherente en el fuego con un poco de manteca para lubricarla y verter la preparación anterior con un cucharón, cocinar vuelta y vuelta a fuego medio. Volver a repetir.",
+          "receta_id": "13"
         },
         {
-           "paso": "Opcional: servir con miel y trocitos de chocolate Cadbury 3 Sueños."
+          "paso": "4",
+          "descripcion": "Opcional: servir con miel y trocitos de chocolate Cadbury 3 Sueños.",
+          "receta_id": "13"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1635,18 +1729,26 @@
       },
       "preparacion": [
         {
-           "paso": "Preparar el bizcochuelo mezclando el polvo con la leche y los huevos."
+          "paso": "1",
+          "descripcion": "Preparar el bizcochuelo mezclando el polvo con la leche y los huevos.",
+          "receta_id": "14"
         },
         {
-           "paso": "Poner en pirotines individuales, rinde para 12 unidades, terminar con una galletita Oreo por adentro."
+          "paso": "2",
+          "descripcion": "Poner en pirotines individuales, rinde para 12 unidades, terminar con una galletita Oreo por adentro.",
+          "receta_id": "14"
         },
         {
-           "paso": "Llevar a horno mínimo (150 grados) durante 30 minutos."
+          "paso": "3",
+          "descripcion": "Llevar a horno mínimo (150 grados) durante 30 minutos.",
+          "receta_id": "14"
         },
         {
-           "paso": "Dejar enfriar y decorar con Butter cream o dulce de leche por arriba con una manga y una Mini Oreo o Milka Bis."
+          "paso": "4",
+          "descripcion": "Dejar enfriar y decorar con Butter cream o dulce de leche por arriba con una manga y una Mini Oreo o Milka Bis.",
+          "receta_id": "14"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1751,21 +1853,31 @@
       },
       "preparacion": [
         {
-           "paso": "Procesar las Oreo y agregar la manteca derretida y formar la base."
+          "paso": "1",
+          "descripcion": "Procesar las Oreo y agregar la manteca derretida y formar la base.",
+          "receta_id": "17"
         },
         {
-           "paso": "Poner en una tartera de 26 cm de diámetro."
+          "paso": "2",
+          "descripcion": "Poner en una tartera de 26 cm de diámetro.",
+          "receta_id": "17"
         },
         {
-           "paso": "Rellenar con el dulce de leche repostero."
+          "paso": "3",
+          "descripcion": "Rellenar con el dulce de leche repostero.",
+          "receta_id": "17"
         },
         {
-           "paso": "Por último derretir el chocolate blanco con 100 ml de crema de leche en el microondas dos minutos."
+          "paso": "4",
+          "descripcion": "Por último derretir el chocolate blanco con 100 ml de crema de leche en el microondas dos minutos.",
+          "receta_id": "17"
         },
         {
-           "paso": "Llevar tres horas a la heladera o una al freezer! Desmoldar y decorar con más dulce de leche, chocolate Milka Oreo y galletitas Oreo."
+          "paso": "5",
+          "descripcion": "Llevar tres horas a la heladera o una al freezer! Desmoldar y decorar con más dulce de leche, chocolate Milka Oreo y galletitas Oreo.",
+          "receta_id": "17"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1817,21 +1929,31 @@
       },
       "preparacion": [
         {
-           "paso": "Preparar el postre Royal con la leche en el fuego."
+          "paso": "1",
+          "descripcion": "Preparar el postre Royal con la leche en el fuego.",
+          "receta_id": "18"
         },
         {
-           "paso": "Llevar a la heladera mínimo 30 minutos."
+          "paso": "2",
+          "descripcion": "Llevar a la heladera mínimo 30 minutos.",
+          "receta_id": "18"
         },
         {
-           "paso": "Formar la torta en un molde cuadrado o rectangular intercalando una capa de galletitas con una del postre de chocolate Royal, y así sucesivamente."
+          "paso": "3",
+          "descripcion": "Formar la torta en un molde cuadrado o rectangular intercalando una capa de galletitas con una del postre de chocolate Royal, y así sucesivamente.",
+          "receta_id": "18"
         },
         {
-           "paso": "Volver a llevar a la heladera mínimo una hora."
+          "paso": "4",
+          "descripcion": "Volver a llevar a la heladera mínimo una hora.",
+          "receta_id": "18"
         },
         {
-           "paso": "Cortar en cuadrados, decorar con dulce de leche repostero, chocolate Milka blanco derretido y opcional Oreo partidas."
+          "paso": "5",
+          "descripcion": "Cortar en cuadrados, decorar con dulce de leche repostero, chocolate Milka blanco derretido y opcional Oreo partidas.",
+          "receta_id": "18"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1883,18 +2005,26 @@
       },
       "preparacion": [
         {
-           "paso": "Procesar las galletitas Lincoln, agregar la manteca derretida y poner en una base de un molde desmoldable redondo de 22 cm de diámetro."
+          "paso": "1",
+          "descripcion": "Procesar las galletitas Lincoln, agregar la manteca derretida y poner en una base de un molde desmoldable redondo de 22 cm de diámetro.",
+          "receta_id": "19"
         },
         {
-           "paso": "Batir el dulce de leche, la crema y el queso crema hasta que quede una crema bien homogénea."
+          "paso": "2",
+          "descripcion": "Batir el dulce de leche, la crema y el queso crema hasta que quede una crema bien homogénea.",
+          "receta_id": "19"
         },
         {
-           "paso": "Volcar la crema sobre la base y llevar al freezer mínimo 1 hora."
+          "paso": "3",
+          "descripcion": "Volcar la crema sobre la base y llevar al freezer mínimo 1 hora.",
+          "receta_id": "19"
         },
         {
-           "paso": "Decorar con dulce de leche y trocitos de Chocolate Milka Oreo Blanco."
+          "paso": "4",
+          "descripcion": "Decorar con dulce de leche y trocitos de Chocolate Milka Oreo Blanco.",
+          "receta_id": "19"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -1946,15 +2076,21 @@
       },
       "preparacion": [
         {
-           "paso": "Batir la crema de leche con el azúcar hasta que queda firme. Agregar las frutillas cortadas chiquitas."
+          "paso": "1",
+          "descripcion": "Batir la crema de leche con el azúcar hasta que queda firme. Agregar las frutillas cortadas chiquitas.",
+          "receta_id": "20"
         },
         {
-           "paso": "Armado en vasitos individuales: poner Mini Oreo en la base, dulce de leche por arriba y por último la crema de frutillas."
+          "paso": "2",
+          "descripcion": "Armado en vasitos individuales: poner Mini Oreo en la base, dulce de leche por arriba y por último la crema de frutillas.",
+          "receta_id": "20"
         },
         {
-           "paso": "Decorar por arriba con Chocolate Cadbury Yoghurt."
+          "paso": "3",
+          "descripcion": "Decorar por arriba con Chocolate Cadbury Yoghurt.",
+          "receta_id": "20"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {
@@ -2007,24 +2143,36 @@
       },
       "preparacion": [
         {
-           "paso": "Derretir en el microondas el chocolate blanco y la manteca. Revolver bien."
+          "paso": "1",
+          "descripcion": "Derretir en el microondas el chocolate blanco y la manteca. Revolver bien.",
+          "receta_id": "21"
         },
         {
-           "paso": "Agregar los huevos, el paquete de Oreo procesadas y por último la harina."
+          "paso": "2",
+          "descripcion": "Agregar los huevos, el paquete de Oreo procesadas y por último la harina.",
+          "receta_id": "21"
         },
         {
-           "paso": "Enmantecar y enharinar los moldecitos individuales (pueden ser de silicona)."
+          "paso": "3",
+          "descripcion": "Enmantecar y enharinar los moldecitos individuales (pueden ser de silicona).",
+          "receta_id": "21"
         },
         {
-           "paso": "Llenar 3/4 partes y con una manga o dos cucharas agregar el dulce de leche."
+          "paso": "4",
+          "descripcion": "Llenar 3/4 partes y con una manga o dos cucharas agregar el dulce de leche.",
+          "receta_id": "21"
         },
         {
-           "paso": "Llevar a horno 200 grados entre 10 y 12 minutos."
+          "paso": "5",
+          "descripcion": "Llevar a horno 200 grados entre 10 y 12 minutos.",
+          "receta_id": "21"
         },
         {
-           "paso": "Rinde para 6."
+          "paso": "6",
+          "descripcion": "Rinde para 6.",
+          "receta_id": "21"
         }
-     ],
+      ],
       "ingredientes": {
         "propios": [
           {

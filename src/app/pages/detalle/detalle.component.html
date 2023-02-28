@@ -2,8 +2,8 @@
     <ng-container *ngIf="load; else loader">
         <div class="max-w-6xl mt-28 mx-auto">
             <div class="grid grid-cols-12 gap-x-5 gap-y-8 mx-auto sm:mx-5">
-                <div class="col-span-12 mx-auto w-full">
-                    <img [src]="'assets/img/logo-'+marcaTitulo.toLowerCase()+'.png'" class="w-auto mx-auto h-16 pb-3"
+                <div class="col-span-12 mx-auto w-full" data-aos="zoom-in-up">
+                    <img [src]="'assets/images/logo-'+marcaTitulo.toLowerCase()+'.png'" class="w-auto mx-auto h-16 pb-3"
                         alt="">
                     <div class="text-primary text-2xl text-center">
                         <h1>Recetas con <span class="font-extrabold">{{marcaTitulo}}</span> </h1>
@@ -13,7 +13,7 @@
                     *ngFor="let p of producto">
                     <div class="shadow-2xl">
                         <div
-                            class="h-20 border bg-gradient-to-tr from-primary to-[#458dc4] rounded-tl-2xl rounded-tr-2xl">
+                            class="h-20 bg-gradient-to-tr from-primary to-[#458dc4] rounded-tl-2xl rounded-tr-2xl">
                             <div class="flex justify-center items-center h-full text-white w-2/3 mx-auto text-center">
                                 <a [href]="'receta/'+p.idReceta">
                                     <h1 class="text-sm md:text-base">{{p.titulo.text1}} <span
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                     <div class="mx-auto w-1/2 mt-2">
-                        <img src="assets/img/divide.png" alt="">
+                        <img src="assets/images/divide.png" alt="">
                     </div>
                 </div>
                 <div class="col-span-12 mx-auto text-primary items-center inline-flex text-xl md:text-2xl" *ngIf="ig">

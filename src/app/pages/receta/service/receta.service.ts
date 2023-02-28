@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import data from '../../../../mockdata/data.json';
+import data from '../../../../assets/mockdata/data.json';
 import { Router } from '@angular/router';
 
 @Injectable({
