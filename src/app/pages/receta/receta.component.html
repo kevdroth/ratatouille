@@ -32,12 +32,12 @@
                         </div>
                     </div>
                     <div class="mt-12 lg:mt-20">
-                        <div class="col-span-12 my-5 w-2/3 md:w-full mx-5">
+                        <div class="col-span-12 my-5 w-2/3 md:w-full mx-5 md:mx-auto">
                             <h1 class="text-secondary font-extrabold my-2">Ingredientes</h1>
                             <ul class="list-disc mx-5 text-gray-600">
                                 <li *ngFor="let p of r.ingredientes.propios"><span
-                                        class="font-extrabold text-xl text-secondary">{{p.producto}}</span>
-                                    {{p.cantidad}}</li>
+                                        class="font-extrabold text-xl text-secondary">{{p.producto}} {{p.cantidad}}</span>
+                                    </li>
                                 <li *ngFor="let n of r.ingredientes.noPropios">{{n.cantidad}} {{n.producto}}</li>
                             </ul>
                         </div>
