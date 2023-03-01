@@ -49,11 +49,12 @@ $ratatouille-theme: mat.define-light-theme(
 
   @font-face {
     font-family: "fontspring";
-    src: url("assets/font/Fontspring-DEMO-millard-400-regular.otf");
+    src: url("assets/font/millard-400-regular.otf");
   }
 
   @font-face {
     font-family: "fontspring-bold";
-    src: url("assets/font/Fontspring-DEMO-millard-700-bold.otf");
+    src: url("assets/font/millard-700-bold.otf");
   }
+
 }
