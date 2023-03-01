@@ -1954,51 +1954,6 @@
       }
     },
     {
-      "idReceta": 15,
-      "titulo": {
-        "text1": "Palitos helados",
-        "marca1": "Milka",
-        "text2": "",
-        "marca2": ""
-      },
-      "ingredientes": {
-        "propios": [
-          {
-            "producto": "1 Chocolate Milka Leche por",
-            "cantidad": "150g"
-          }
-        ],
-        "noPropios": [
-          {
-            "producto": "de crema de leche",
-            "cantidad": "300 g"
-          },
-          {
-            "producto": "de pasta de maní",
-            "cantidad": "1 pote"
-          },
-          {
-            "producto": "de esencia de vainilla",
-            "cantidad": "1 chorrito"
-          },
-          {
-            "producto": "de az\u00facar",
-            "cantidad": "80 g"
-          }
-        ]
-      },
-      "flotante2": "pack15.png",
-      "flotante3": "brillo.png",
-      "flotanteMascara": "mascara-fondo.png",
-      "qr": "qr-15.png",
-      "imgReceta": "img-ppal15",
-      "videoReceta": "palitos-helados-mantecol.mp4",
-      "coordenadas": {
-        "x": 100,
-        "y": 200
-      }
-    },
-    {
       "idReceta": 16,
       "titulo": {
         "text1": "Tarta",
