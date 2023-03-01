@@ -1,8 +1,7 @@
-<div class="max-w-4xl mt-20 mx-auto" data-aos="zoom-in-up" data-aos-mirror="true" style="text-align: -webkit-center;">
-    <div class="pt-5">
-        <!-- <img src="assets/images/mezcla.png" alt=""> -->
-        <img src="assets/images/galletitea.jpeg" alt="">
-    </div>
+<div class="py-5 w-full">
+    <img src="assets/images/galletitea.jpeg" alt="" class="w-full">
+</div>
+<div class="max-w-4xl mt-10 mx-auto" data-aos="zoom-in-up" data-aos-mirror="true" style="text-align: -webkit-center;">
     <div class="max-w-2xl mx-5 sm:mx-auto">
         <h1 class="text-2xl text-primary mb-8">Te invitamos a mezclar los productos de nuestras marcas <span
                 class="font-black text-2xl"><b>Oreo</b>, <b>Milka</b>, <b>Terrabusi</b></span> y
@@ -23,10 +22,11 @@
         <h1 class="text-2xl text-gray-500">Elegí recetas con:</h1>
     </div>
     <div class="grid grid-cols-12 mx-auto w-full justify-items-center my-4 gap-y-5">
-        <div class="col-span-12" *ngFor="let m of marca">
-            <a [href]="'detalle/'+m.slug">
-                <img [src]="'assets/images/'+m.logo" class="h-20 w-52 object-contain" alt="" data-aos="zoom-in-up">
+        <div class="col-span-12" *ngFor="let m of marca" data-aos="zoom-in-up">
+            <a [href]="'detalle/'+m.slug" >
+                <img [src]="'assets/images/'+m.logo" class="h-20 w-52 object-contain" alt="" >
             </a>
         </div>
     </div>
 </div>
+
