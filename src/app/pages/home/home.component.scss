@@ -42,10 +42,9 @@
 
 section{
     position: relative;
-    width: 100%;
-    height: 100vh;
     padding: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -58,7 +57,7 @@ section::before{
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, white-space, transparent);
-    z-index: 1000;
+    z-index: 49;
 }
 
 section img{
@@ -66,29 +65,10 @@ section img{
     pointer-events: none;
 }
 
-section div{
-    position: absolute;
-    pointer-events: none;
-}
-
-#text{
-    position: absolute;
-    right: -350px;
-    color: #fff;
-    white-space: nowrap;
-    font-size: 7.5vw;
-    z-index: 9;
-}
-
-#btn{
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 40px;
-    background: #fff;
-    color: gray;
-    font-size: 1.5em;
-}
+// section div{
+//     position: absolute;
+//     pointer-events: none;
+// }
 
 .sec{
     font-size: 1em;
