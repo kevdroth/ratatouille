@@ -15,26 +15,31 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.marca = this.service.products().producto;
-    // this.parallax();
+    this.parallax();
   }
 
-  // parallax() {
-  //   let text = document.getElementById('text');
-  //   let stars = document.getElementById('stars');
-  //   let moon = document.getElementById('moon');
-  //   let mountains_behind = document.getElementById('mountains_behind');
-  //   let btn = document.getElementById('btn');
-  //   let mountains_front = document.getElementById('mountains_front');
+  parallax() {
+    let oreo = document.getElementById('oreo');
+    let condimento = document.getElementById('condimento');
+    let platoTorta = document.getElementById('platoTorta');
+    let frutosSecos = document.getElementById('frutosSecos');
+    let chocoBarra = document.getElementById('chocoBarra');
+    let platoGalletas = document.getElementById('platoGalletas');
+    let lincoln = document.getElementById('lincoln');
+    let cuchara = document.getElementById('cuchara');
+    let sec = document.getElementById('sec');
 
-  //   window.addEventListener('scroll', function () {
-  //     var value = this.window.scrollY;
-  //     stars!.style.left = value * 0.25 + 'px';
-  //     moon!.style.top = value * 1.05 + 'px';
-  //     mountains_behind!.style.top = value * 0.5 + 'px';
-  //     mountains_front!.style.top = value * 0 + 'px';
-  //     text!.style.marginRight = value * 4 + 'px';
-  //     text!.style.marginTop = value * 1.5 + 'px';
-  //     btn!.style.left = value * 1.5 + 'px';
-  //   });
-  // }
+    window.addEventListener('scroll', function () {
+      let value = this.window.scrollY;
+      oreo!.style.top = value * 0.7 + 'px';
+      condimento!.style.top = value * 0.55 + 'px';
+      platoTorta!.style.top = value * 0.5 + 'px';
+      frutosSecos!.style.left = value * 0.21 + 'px';
+      chocoBarra!.style.right = value * 0.17 + 'px';
+      platoGalletas!.style.bottom = value * 0.3 + 'px';
+      lincoln!.style.bottom = value * 0.4 + 'px';
+      cuchara!.style.bottom = value * 0.16 + 'px';
+      sec!.style.bottom = value * 0.16 + 'px';
+    });
+  }
 }
