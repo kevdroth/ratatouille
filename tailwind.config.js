@@ -16,7 +16,10 @@ module.exports = {
         'slub': ['Roboto Slab', 'serif'],
         'fontspring': ['Fontspring', 'serif'],
         'fontspring-bold': ['Fontspring', 'serif'],
-      }
+      },
+      screens:{
+        '2xl': '1920px'
+      },
     },
   },
   plugins: [],

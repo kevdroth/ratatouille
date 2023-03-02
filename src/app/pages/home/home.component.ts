@@ -76,13 +76,13 @@ export class HomeComponent implements OnInit {
         oreo!.style.position = 'fixed';
       }
 
-      if (value < 240) {
+      if (value < 240 ) {
         lincoln!.style.bottom = value * 1.2 + 'px';
       } else {
         lincoln!.style.position = 'fixed';
       }
 
-      sec!.style.bottom = value * 0.22 + 'px';
+      sec!.style.bottom = value * 0.02 + 'px';
     });
   }
 }
