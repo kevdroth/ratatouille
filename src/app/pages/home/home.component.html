@@ -53,7 +53,7 @@
     <img src="assets/home/cuchara.png" id="cuchara"
         class="2xl:w-[650px] 2xl:z-10 2xl:bottom-0 2xl:h-auto 2xl:translate-y-48 hidden 2xl:block">
     <div class="2xl:h-[10vh]"></div>
-    <div class="2xl:max-w-5xl 2xl:p-16 hidden 2xl:block text-center place-items-center 2xl:rounded-2xl 2xl:z-50 mx-auto 2xl:bg-[#ebebec] 2xl:relative 2xl:translate-y-[450px] 2xl:bottom-0 2xl:left-0 2xl:right-0"
+    <div class="2xl:max-w-5xl 2xl:p-14 hidden 2xl:block text-center place-items-center 2xl:rounded-2xl 2xl:z-50 mx-auto 2xl:bg-[#ebebec] 2xl:relative 2xl:translate-y-[400px] 2xl:bottom-0 2xl:left-0 2xl:right-0"
         id="sec">
         <div class="mx-5 sm:mx-auto 2xl:z-50">
             <h1 class="text-2xl text-primary mb-8">Te invitamos a mezclar los productos de nuestras marcas <span
@@ -74,9 +74,9 @@
             <div class="p-7 mx-5 sm:mx-auto">
                 <h1 class="text-2xl text-gray-500">Elegí recetas con:</h1>
             </div>
-            <div class="flex mx-auto w-full h-full justify-items-center my-4 gap-y-16 p-3">
-                <div class="flex mx-auto w-full h-full" *ngFor="let m of marca">
-                    <a [href]="'detalle/'+m.slug" class="h-full w-full mx-auto">
+            <div class="flex mx-auto w-full h-28 justify-items-center my-4 relative bottom-0 top-0">
+                <div class="flex mx-auto w-full " *ngFor="let m of marca">
+                    <a [href]="'detalle/'+m.slug" class="w-full mx-auto">
                         <img [src]="'assets/images/'+m.logo" class="h-20 w-52 object-contain" alt="">
                     </a>
                 </div>

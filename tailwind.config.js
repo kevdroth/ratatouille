@@ -18,7 +18,7 @@ module.exports = {
         'fontspring-bold': ['Fontspring', 'serif'],
       },
       screens:{
-        '2xl': '1220px'
+        '2xl': '1920px'
       },
     },
   },

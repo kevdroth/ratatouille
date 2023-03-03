@@ -64,8 +64,9 @@ export class HomeComponent implements OnInit {
         lincoln!.style.bottom = value * 1.2 + 'px';
       }
 
-      if (value < 240 ) {
-        sec!.style.bottom = value * 2.6 + 'px';
+      if (value < 300 ) {
+        sec!.style.bottom = value * 2 + 'px';
+      }else{
       }
 
     });
