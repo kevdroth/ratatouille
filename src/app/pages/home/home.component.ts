@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
     let platoGalletas = document.getElementById('platoGalletas');
     let lincoln = document.getElementById('lincoln');
     let cuchara = document.getElementById('cuchara');
+    let jarrito = document.getElementById('jarrito');
     let sec = document.getElementById('sec');
 
     window.addEventListener('scroll', function () {
@@ -34,6 +35,10 @@ export class HomeComponent implements OnInit {
 
       if (value <= 240) {
         chocoBarra!.style.right = value * 0.6 + 'px';
+      }
+
+      if (value <= 240) {
+        jarrito!.style.top = value * 0.2 + 'px';
       }
 
       if (value < 240) {
