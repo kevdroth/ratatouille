@@ -64,7 +64,10 @@ export class HomeComponent implements OnInit {
         lincoln!.style.bottom = value * 1.2 + 'px';
       }
 
-      sec!.style.bottom = value * 0.8 + 'px';
+      if (value < 240 ) {
+        sec!.style.bottom = value * 2.6 + 'px';
+      }
+
     });
   }
 }
