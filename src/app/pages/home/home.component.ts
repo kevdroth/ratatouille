@@ -31,58 +31,40 @@ export class HomeComponent implements OnInit {
 
     window.addEventListener('scroll', function () {
       let value = this.window.scrollY;
-      console.log(value);
-      console.log(chocoBarra!.style.top);
 
-      if (value < 240) {
+      if (value <= 240) {
         chocoBarra!.style.right = value * 0.6 + 'px';
-      } else {
-        chocoBarra!.style.position = 'fixed';
       }
 
       if (value < 240) {
         condimento!.style.top = value * 0.4 + 'px';
-      } else {
-        condimento!.style.position = 'fixed';
       }
 
       if (value < 240) {
         platoTorta!.style.top = value * 0.65 + 'px';
-      } else {
-        platoTorta!.style.position = 'fixed';
       }
 
       if (value < 240) {
         frutosSecos!.style.left = value * 0.6 + 'px';
-      } else {
-        frutosSecos!.style.position = 'fixed';
       }
 
       if (value < 240) {
         platoGalletas!.style.bottom = value * 1.1 + 'px';
-      } else {
-        platoGalletas!.style.position = 'fixed';
       }
 
       if (value < 240) {
         cuchara!.style.bottom = value * 0.8 + 'px';
-      } else {
-        cuchara!.style.position = 'fixed';
       }
 
       if (value < 240) {
         oreo!.style.top = value * 0.8 + 'px';
-      } else {
-        oreo!.style.position = 'fixed';
       }
 
       if (value < 240 ) {
         lincoln!.style.bottom = value * 1.2 + 'px';
-      } else {
-        lincoln!.style.position = 'fixed';
       }
 
-      sec!.style.bottom = value * 0.02 + 'px';
+      sec!.style.bottom = value * 0.8 + 'px';
     });
   }
 }

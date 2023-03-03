@@ -1,7 +1,6 @@
 @media (min-width: 1920px) {
   section {
     position: relative;
-    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +22,7 @@
 }
 
 section img {
-  position: absolute;
+  position: fixed;
   pointer-events: none;
 }
 
