@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DetalleService } from './service/detalle.service';
 import { map, take, tap } from 'rxjs';
 import { AppService } from '../../services/app.service';
-import { Marcas } from '../../interfaces/product.interface';
+import { Marcas } from '../../interfaces/recetas.interface';
 
 @Component({
   selector: 'app-detalle',
@@ -52,7 +52,6 @@ export class DetalleComponent implements OnInit {
           this.producto = this.detalleService.getProductos(titulo);
           console.log('🚀 ~ producto:', this.producto);
           this.load = true;
-          this.setIg();
         },
         error: (err) => {
           console.log(err)
@@ -63,17 +62,4 @@ export class DetalleComponent implements OnInit {
       });
   }
 
-  setIg() {
-    switch (this.marcaTitulo) {
-      case 'Oreo':
-        this.ig = 'https://www.instagram.com/recetoreo/?hl=es-la';
-        break;
-      case 'Milka':
-        this.ig = 'https://www.instagram.com/milka_argentina/';
-        break;
-      default:
-        this.ig = '';
-        break;
-    }
-  }
 }

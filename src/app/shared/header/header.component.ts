@@ -2,7 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MenuDialogComponent } from './components/menu-dialog/menu-dialog.component';
 import { AppService } from '../../services/app.service';
-import { Marcas } from '../../interfaces/product.interface';
+import { Marcas } from '../../interfaces/recetas.interface';
 
 @Component({
   selector: 'app-header',
@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   constructor(public dialog: MatDialog, private service: AppService) {}
 
   ngOnInit(): void {
-    this.marca = this.service.products().producto
+    this.marca = this.service.products().marcas
     console.log("🚀 ~ this.marca:", this.marca)
   }
 

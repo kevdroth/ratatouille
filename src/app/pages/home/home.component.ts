@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Marcas } from 'src/app/interfaces/product.interface';
+import { Marcas } from 'src/app/interfaces/recetas.interface';
 import { AppService } from '../../services/app.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private service: AppService) {}
 
   ngOnInit(): void {
-    this.marca = this.service.products().producto;
+    this.marca = this.service.products().marcas;
     this.parallax();
   }
 

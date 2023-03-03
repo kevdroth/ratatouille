@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import product from '../../assets/mockdata/product.json'
+import data from '../../assets/mockdata/data.json'
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,6 @@ export class AppService {
   constructor() { }
 
   products(){
-    return product
+    return data
   }
 }

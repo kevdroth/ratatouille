@@ -2376,5 +2376,31 @@
         "y": 200
       }
     }
-  ]
+  ],
+  "marcas": [
+    {
+    "nombre": "Oreo",
+    "redes": "https://www.instagram.com/recetoreo/",
+    "slug": "Oreo",
+    "logo": "logo-oreo.png"
+    },
+    {
+    "nombre": "Milka",
+    "redes": "https://www.instagram.com/milka_argentina/",
+    "slug": "Milka",
+    "logo": "logo-milka.png"
+    },
+    {
+    "nombre": "Royal",
+    "redes": "",
+    "slug": "Royal",
+    "logo": "logo-royal.png"
+    },
+    {
+    "nombre": "Lincoln",
+    "redes": "",
+    "slug": "Lincoln",
+    "logo": "logo-lincoln.png"
+    }
+    ]
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Marcas } from 'src/app/interfaces/product.interface';
+import { Marcas } from 'src/app/interfaces/recetas.interface';
 import { AppService } from '../../../../services/app.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class MenuDialogComponent implements OnInit {
   constructor(private service: AppService) {}
 
   ngOnInit(): void {
-    this.marca = this.service.products().producto;
+    this.marca = this.service.products().marcas;
   }
 
 }
