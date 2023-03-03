@@ -9,9 +9,9 @@
                         <h1>Recetas con <span class="font-extrabold">{{marcaTitulo}}</span> </h1>
                     </div>
                 </div>
-                <div class="col-span-12 mx-auto md:col-span-6 lg:col-span-4 w-[80%] md:w-full" data-aos="zoom-in-up"
+                <div class="col-span-12 mx-auto md:col-span-6 lg:col-span-4 w-[80%] md:w-full" 
                     *ngFor="let p of producto.producto">
-                    <div class="shadow-2xl">
+                    <div class="shadow-2xl" data-aos="zoom-in-up">
                         <div class="h-20 bg-gradient-to-tr from-primary to-[#458dc4] rounded-tl-2xl rounded-tr-2xl">
                             <div class="flex justify-center items-center h-full text-white w-2/3 mx-auto text-center">
                                 <a [href]="'receta/'+p.idReceta">
