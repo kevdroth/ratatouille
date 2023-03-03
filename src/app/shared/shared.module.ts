@@ -24,6 +24,7 @@ import { NoDataComponent } from './no-data/no-data.component';
   exports: [
     HeaderComponent,
     FooterComponent,
+    MenuDialogComponent,
     ScrollToTopComponent,
     SkeletonDetalleComponent,
     SkeletonRecetaComponent,

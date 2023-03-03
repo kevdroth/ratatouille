@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Marcas } from 'src/app/interfaces/recetas.interface';
-import { AppService } from '../../services/app.service';
+import { Marcas } from 'src/interfaces/recetas.interface';
+import { AppService } from '../services/app.service';
 
 @Component({
   selector: 'app-home',
@@ -65,15 +65,14 @@ export class HomeComponent implements OnInit {
         oreo!.style.top = value * 0.8 + 'px';
       }
 
-      if (value < 240 ) {
+      if (value < 240) {
         lincoln!.style.bottom = value * 1.2 + 'px';
       }
 
-      if (value < 300 ) {
+      if (value < 300) {
         sec!.style.bottom = value * 2 + 'px';
-      }else{
+      } else {
       }
-
     });
   }
 }

@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import data from '../../../../assets/mockdata/data.json';
-import { AppService } from '../../../services/app.service';
+import data from '../../../assets/mockdata/data.json';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DetalleService {
 
-  constructor(private router: Router, private service: AppService) {}
+  constructor(private router: Router) {}
 
   getProductos(marca: string){
     const { recetas, marcas } = data;

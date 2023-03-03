@@ -1,10 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { DetalleComponent } from './pages/detalle/detalle.component';
-import { RecetaComponent } from './pages/receta/receta.component';
-import { RegistroComponent } from './pages/registro/registro.component';
-import { LegalesComponent } from './pages/legales/legales.component';
 
 const routes: Routes = [
   {
@@ -14,28 +9,32 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent,
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'detalle/:titulo',
-    component: DetalleComponent,
+    loadChildren: () =>
+      import('./detalle/detalle.module').then((m) => m.DetalleModule),
   },
   {
     path: 'receta/:idReceta',
-    component: RecetaComponent,
+    loadChildren: () =>
+      import('./receta/receta.module').then((m) => m.RecetaModule),
   },
   {
     path: 'registro',
-    component: RegistroComponent,
+    loadChildren: () =>
+      import('./registro/registro.module').then((m) => m.RegistroModule),
   },
   {
     path: 'legales',
-    component: LegalesComponent,
+    loadChildren: () =>
+      import('./legales/legales.module').then((m) => m.LegalesModule),
   },
   {
     path: '**',
-    component: HomeComponent
-  }
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+  },
 ];
 
 @NgModule({

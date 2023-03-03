@@ -6,10 +6,9 @@ import {
   ChangeDetectorRef,
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DetalleService } from './service/detalle.service';
 import { map, take, tap } from 'rxjs';
-import { AppService } from '../../services/app.service';
-import { Marcas } from '../../interfaces/recetas.interface';
+import { Marcas } from 'src/interfaces/recetas.interface';
+import { DetalleService } from './service/detalle.service';
 
 @Component({
   selector: 'app-detalle',
@@ -22,13 +21,12 @@ export class DetalleComponent implements OnInit {
   ig!: string;
   windowScrolled = false;
   load: boolean = false;
-  marca!: Marcas[]
+  marca!: Marcas[];
 
   constructor(
     private detalleService: DetalleService,
     private router: Router,
-    private activatedRoute: ActivatedRoute,
-    private service: AppService
+    private activatedRoute: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
@@ -54,12 +52,11 @@ export class DetalleComponent implements OnInit {
           this.load = true;
         },
         error: (err) => {
-          console.log(err)
+          console.log(err);
         },
         complete: () => {
-          console.log('llegue')
+          console.log('llegue');
         },
       });
   }
-
 }
