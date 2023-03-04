@@ -28,7 +28,7 @@
                             <video [muted]="'muted'" onmouseleave="pause()" onmouseover="play()" *ngIf="p.imgReceta"
                                 class="hover:scale-[1.15] ease-in-out duration-1000 object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
                                 loop id="videoPlayer"
-                                [src]="p.imgReceta?.length ? 'assets/images/' + p.videoReceta : 'assets/images/default.svg'"
+                                [src]="p.imgReceta?.length ? 'assets/videosDetalles/' + p.videoReceta : 'assets/images/default.svg'"
                                 type="video/mp4">
                             </video>
                             <div class="absolute grid grid-cols-12 gap-x-2 z-20 bottom-[-5px] left-0 w-full">

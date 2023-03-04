@@ -31,14 +31,10 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
-    
-    setInterval(() => {
       this.load = true;
       this.loadScrollBtn();
       this.loadDetalle();
       console.log('cargue')
-    }, 1600);
   }
 
   ngOnDestroy(): void {}
