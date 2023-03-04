@@ -31,14 +31,8 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
-    
-    setInterval(() => {
-      this.load = true;
       this.loadScrollBtn();
       this.loadDetalle();
-      console.log('cargue')
-    }, 1300);
   }
 
   ngOnDestroy(): void {}
@@ -51,21 +45,17 @@ export class DetalleComponent implements OnInit {
   }
 
   loadDetalle() {
-    this.load = true;
     this.activatedRoute.params
       .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
       .subscribe({
         next: (titulo) => {
           this.producto = this.detalleService.getProductos(titulo);
           this.load = true;
-          console.log('🚀 ~ producto:', this.producto);
+
         },
         error: (err) => {
-          console.log(err);
         },
         complete: () => {
-          
-          console.log('llegue');
         },
       });
   }

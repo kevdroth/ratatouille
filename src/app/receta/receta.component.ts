@@ -29,15 +29,10 @@ export class RecetaComponent implements OnInit {
       .subscribe({
         next: (value) => {
           this.receta = this.recetaService.getReceta(value);
-          console.log('🚀 ~ receta', this.receta);
           this.load = true;
         },
         error: (err) => console.log(err),
         complete: () => {
-          setTimeout(() => {
-            
-            console.log('llegue');
-          }, 2000);
         }
       });
   }

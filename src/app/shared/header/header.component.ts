@@ -16,7 +16,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.marca = this.service.products().marcas;
-    console.log('🚀 ~ this.marca:', this.marca);
   }
 
   openMenu() {
