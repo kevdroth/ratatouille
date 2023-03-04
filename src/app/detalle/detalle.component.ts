@@ -31,6 +31,8 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.load = false;
+
       this.loadScrollBtn();
       this.loadDetalle();
   }
@@ -50,7 +52,6 @@ export class DetalleComponent implements OnInit {
       .subscribe({
         next: (titulo) => {
           this.producto = this.detalleService.getProductos(titulo);
-          this.load = true;
 
         },
         error: (err) => {
@@ -58,5 +59,8 @@ export class DetalleComponent implements OnInit {
         complete: () => {
         },
       });
+      setInterval(() => {
+        this.load = true;
+      }, 1000);
   }
 }
