@@ -2,7 +2,7 @@
     <ng-container *ngIf="load; else loader">
         <div class="max-w-6xl mt-28 mb-5 mx-auto" *ngFor="let m of producto.marcasFiltradas">
             <div class="grid grid-cols-12 gap-x-5 gap-y-8 mx-auto sm:mx-5">
-                <div class="col-span-12 mx-auto w-full" data-aos="zoom-in-up">
+                <div class="col-span-12 mx-auto w-full" >
                     <img [src]="'assets/images/'+ m.logo" class="w-auto mx-auto h-16 pb-3"
                         alt="">
                     <div class="text-primary text-2xl text-center">
