@@ -1,5 +1,5 @@
+<ng-container *ngIf="load; else loader">
 <ng-container *ngIf="producto; else noData">
-    <ng-container *ngIf="load; else loader">
         <div class="max-w-6xl mt-28 mb-5 mx-auto" *ngFor="let m of producto.marcasFiltradas">
             <div class="grid grid-cols-12 gap-x-5 gap-y-8 mx-auto sm:mx-5">
                 <div class="col-span-12 mx-auto w-full" >
@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         <div class="relative top-0 left-0 z-10 h-[550px] w-full mx-auto overflow-hidden">
-                            <img class="object-center object-cover hover:hidden h-full w-full mx-auto "
+                            <img id="img" class="object-center object-cover hover:hidden h-full w-full mx-auto "
                                 [src]="p.imgReceta?.length ? 'assets/images/' + p.imgReceta + '.jpg' : 'assets/images/default.svg'"
                                 alt="">
                             <video [muted]="'muted'" onmouseleave="pause()" onmouseover="play()" *ngIf="p.imgReceta"

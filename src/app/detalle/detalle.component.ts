@@ -22,6 +22,7 @@ export class DetalleComponent implements OnInit {
   windowScrolled = false;
   load: boolean = false;
   marca!: Marcas[];
+  value: boolean = false
 
   constructor(
     private detalleService: DetalleService,
@@ -30,31 +31,40 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.loadScrollBtn();
-    this.loadDetalle();
+
+    
+    setInterval(() => {
+      this.load = true;
+      this.loadScrollBtn();
+      this.loadDetalle();
+      console.log('cargue')
+    }, 1600);
   }
 
   ngOnDestroy(): void {}
 
   loadScrollBtn() {
     window.addEventListener('scroll', () => {
+      
       this.windowScrolled = window.pageYOffset !== 0;
     });
   }
 
   loadDetalle() {
+    this.load = true;
     this.activatedRoute.params
       .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
       .subscribe({
         next: (titulo) => {
           this.producto = this.detalleService.getProductos(titulo);
-          console.log('🚀 ~ producto:', this.producto);
           this.load = true;
+          console.log('🚀 ~ producto:', this.producto);
         },
         error: (err) => {
           console.log(err);
         },
         complete: () => {
+          
           console.log('llegue');
         },
       });
