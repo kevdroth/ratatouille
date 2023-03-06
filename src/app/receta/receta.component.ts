@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { map } from 'rxjs';
+import { map, filter } from 'rxjs';
 import { Data, Recetas } from 'src/interfaces/recetas.interface';
 import { RecetaService } from './service/receta.service';
 import { Title } from '@angular/platform-browser';
@@ -12,7 +12,6 @@ import { Title } from '@angular/platform-browser';
 })
 export class RecetaComponent implements OnInit {
   receta: any;
-  // ingredientes!: any[];
   load: boolean = false;
 
   constructor(
@@ -32,12 +31,21 @@ export class RecetaComponent implements OnInit {
       .subscribe({
         next: (value) => {
           this.receta = this.recetaService.getReceta(value);
+          this.recetaService
+            .getReceta(value)
+            .map((f) => f.titulo)
+            .map((m) => {
+              let titulo =
+                m.text1 + ' ' + m.marca1 + ' ' + m.text2 + ' ' + m.marca2;
+              this.titleService.setTitle(titulo);
+            });
           this.load = true;
         },
+
         error: (err) => console.log(err),
         complete: () => {
-          console.log('aca')
-        }
+          console.log('aca');
+        },
       });
   }
 
