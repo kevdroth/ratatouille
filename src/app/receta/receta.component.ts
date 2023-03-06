@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs';
 import { Data, Recetas } from 'src/interfaces/recetas.interface';
 import { RecetaService } from './service/receta.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-receta',
@@ -17,7 +18,8 @@ export class RecetaComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private recetaService: RecetaService,
-    private router: Router
+    private router: Router,
+    private titleService: Title
   ) {}
 
   ngOnInit(): void {
@@ -30,7 +32,6 @@ export class RecetaComponent implements OnInit {
       .subscribe({
         next: (value) => {
           this.receta = this.recetaService.getReceta(value);
-
           this.load = true;
         },
         error: (err) => console.log(err),

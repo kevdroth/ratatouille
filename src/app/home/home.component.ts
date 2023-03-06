@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Marcas } from 'src/interfaces/recetas.interface';
 import { AppService } from '../services/app.service';
@@ -11,9 +12,10 @@ import { AppService } from '../services/app.service';
 export class HomeComponent implements OnInit {
   marca: Marcas[] = [];
 
-  constructor(private router: Router, private service: AppService) {}
+  constructor(private router: Router, private service: AppService, private titleService: Title) {}
 
   ngOnInit(): void {
+    this.titleService.setTitle('Home');
     this.marca = this.service.products().marcas;
     this.parallax();
   }

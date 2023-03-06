@@ -9,6 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { map, take, tap } from 'rxjs';
 import { Marcas } from 'src/interfaces/recetas.interface';
 import { DetalleService } from './service/detalle.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-detalle',
@@ -24,7 +25,8 @@ export class DetalleComponent implements OnInit {
   constructor(
     private detalleService: DetalleService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private titleService: Title
   ) {}
 
   ngOnInit(): void {
@@ -43,6 +45,7 @@ export class DetalleComponent implements OnInit {
   loadDetalle() {
     this.activatedRoute.params.pipe(map(({ titulo }) => titulo)).subscribe({
       next: (titulo) => {
+        this.titleService.setTitle(`Recetas ${titulo}`);
         this.producto = this.detalleService.getProductos(titulo);
       },
       error: (err) => {},

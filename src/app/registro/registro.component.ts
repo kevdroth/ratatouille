@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-registro',
@@ -13,9 +14,10 @@ export class RegistroComponent implements OnInit {
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
   
-  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router) {}
+  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router, private titleService: Title) {}
 
   ngOnInit(): void {
+    this.titleService.setTitle('Registro');
     this.form;
   }
 
