@@ -41,7 +41,6 @@ export class RecetaComponent implements OnInit {
             });
           this.load = true;
         },
-
         error: (err) => console.log(err),
         complete: () => {
           console.log('aca');

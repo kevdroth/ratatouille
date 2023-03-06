@@ -22,6 +22,9 @@ export class AppComponent implements OnInit {
       delay: 0,
     });
 
+  }
+  
+  ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         gtag('config', this._googleAnalyticsId, {
@@ -29,15 +32,12 @@ export class AppComponent implements OnInit {
         });
       }
     });
-  }
-
-  ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (!(event instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 0);
-      this.titleService.setTitle('Galletitea');
-    });
+    // this.router.events.subscribe((event) => {
+    //   if (!(event instanceof NavigationEnd)) {
+    //     return;
+    //   }
+    //   window.scrollTo(0, 0);
+    //   this.titleService.setTitle('Galletitea');
+    // });
   }
 }

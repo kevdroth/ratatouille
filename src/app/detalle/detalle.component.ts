@@ -44,9 +44,9 @@ export class DetalleComponent implements OnInit {
 
   loadDetalle() {
     this.activatedRoute.params.pipe(map(({ titulo }) => titulo)).subscribe({
-      next: (titulo) => {
-        this.titleService.setTitle(`Recetas ${titulo}`);
-        this.producto = this.detalleService.getProductos(titulo);
+      next: (value) => {
+        this.titleService.setTitle(`Recetas ${value}`);
+        this.producto = this.detalleService.getProductos(value);
       },
       error: (err) => {},
       complete: () => {
