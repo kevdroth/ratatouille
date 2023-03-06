@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs';
+import { Data, Recetas } from 'src/interfaces/recetas.interface';
 import { RecetaService } from './service/receta.service';
 
 @Component({
@@ -9,8 +10,8 @@ import { RecetaService } from './service/receta.service';
   styleUrls: ['./receta.component.scss'],
 })
 export class RecetaComponent implements OnInit {
-  receta!: any[];
-  ingredientes!: any[];
+  receta: any;
+  // ingredientes!: any[];
   load: boolean = false;
 
   constructor(
@@ -29,10 +30,12 @@ export class RecetaComponent implements OnInit {
       .subscribe({
         next: (value) => {
           this.receta = this.recetaService.getReceta(value);
+
           this.load = true;
         },
         error: (err) => console.log(err),
         complete: () => {
+          console.log('aca')
         }
       });
   }

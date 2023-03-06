@@ -17,12 +17,9 @@ import { DetalleService } from './service/detalle.service';
 })
 export class DetalleComponent implements OnInit {
   producto!: any;
-  marcaTitulo!: string;
-  ig!: string;
   windowScrolled = false;
   load: boolean = false;
-  marca!: Marcas[];
-  value: boolean = false
+  value: boolean = false;
 
   constructor(
     private detalleService: DetalleService,
@@ -31,36 +28,30 @@ export class DetalleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.load = false;
-
-      this.loadScrollBtn();
-      this.loadDetalle();
+    this.loadScrollBtn();
+    this.loadDetalle();
   }
 
   ngOnDestroy(): void {}
 
   loadScrollBtn() {
     window.addEventListener('scroll', () => {
-      
       this.windowScrolled = window.pageYOffset !== 0;
     });
   }
 
   loadDetalle() {
-    this.activatedRoute.params
-      .pipe(map(({ titulo }) => (this.marcaTitulo = titulo)))
-      .subscribe({
-        next: (titulo) => {
-          this.producto = this.detalleService.getProductos(titulo);
-
-        },
-        error: (err) => {
-        },
-        complete: () => {
-        },
-      });
-      setInterval(() => {
-        this.load = true;
-      }, 1000);
+    this.activatedRoute.params.pipe(map(({ titulo }) => titulo)).subscribe({
+      next: (titulo) => {
+        this.producto = this.detalleService.getProductos(titulo);
+      },
+      error: (err) => {},
+      complete: () => {
+        console.log('aca');
+      },
+    });
+    setInterval(() => {
+      this.load = true;
+    }, 1000);
   }
 }

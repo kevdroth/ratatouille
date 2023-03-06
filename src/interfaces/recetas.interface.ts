@@ -1,23 +1,52 @@
 export interface Recetas {
-  nombre: string;
-  foto: string;
+  coordenadas: Coordenadas;
+  flotante2: string;
+  flotante3: string;
+  flotanteMascara: string;
+  idReceta: number,
+  imgReceta: string;
   ingredientes: Ingredientes[];
   preparacion: Preparacion[];
+  qr: string;
+  titulo: Titulo,
+  videoReceta: string;
 }
 
-export interface Producto {
-  marca: string;
-  slug: string;
-  logo: string;
-  receta: Recetas[];
+export interface Coordenadas{
+  x: number,
+  y: number
+}
+
+export interface Data{
+  recetas: Recetas[]
+}
+
+export interface Titulo{
+  text1: string,
+  marca1: string,
+  text2: string,
+  marca2: string,
 }
 
 export interface Ingredientes {
-  nombre: string;
+  propios: Propios[],
+  nopropios: noPropios[],
+}
+
+export interface Propios{
+  producto: string,
+  cantidad: string
+}
+
+export interface noPropios{
+  producto: string,
+  cantidad: string
 }
 
 export interface Preparacion {
-  nombre: string;
+  paso: string;
+  descripcion: string;
+  receta_id: string;
 }
 
 export interface Marcas{
