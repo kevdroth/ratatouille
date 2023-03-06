@@ -12,7 +12,7 @@ import { Title } from '@angular/platform-browser';
 export class RegistroComponent implements OnInit {
 
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
-  verticalPosition: MatSnackBarVerticalPosition = 'top';
+  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
   
   constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router, private titleService: Title) {}
 
