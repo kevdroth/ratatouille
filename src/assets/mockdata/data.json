@@ -1046,22 +1046,22 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
+            "nombre": "milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "royal",
+            "imagen": "logo-royal.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "milka-chocolate-blanco",
+            "imagen": "milka-chocolate-blanco.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "royal-bizcochuelo",
+            "imagen": "royal-bizcochuelo.png"
           }
         ]
       },
@@ -1136,8 +1136,12 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "lincoln",
+            "imagen": "logo-lincoln.png"
           }
         ],
         "producto": [
@@ -1152,6 +1156,14 @@
           {
             "nombre": "oreo-frutilla",
             "imagen": "oreo-frutilla.png"
+          },
+          {
+            "nombre": "lincoln-chocolate",
+            "imagen": "lincoln-chocolate.png"
+          },
+          {
+            "nombre": "lincoln-regular",
+            "imagen": "lincoln-regular.png"
           }
         ]
       },
@@ -1253,20 +1265,32 @@
           {
             "nombre": "Milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "royal",
+            "imagen": "logo-royal.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "oreo-mini",
+            "imagen": "oreo-mini.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
+            "nombre": "royal-bizcochuelo",
+            "imagen": "royal-bizcochuelo.png"
           },
           {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "milka-chocolate-blanco",
+            "imagen": "milka-chocolate-blanco.png"
+          },
+          {
+            "nombre": "milka-chocolate-negro",
+            "imagen": "milka-chocolate-negro.png"
           }
         ]
       },
@@ -1372,20 +1396,20 @@
           {
             "nombre": "Milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "oreo-golden",
+            "imagen": "oreo-golden.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "milka-chocolate-negro",
+            "imagen": "milka-chocolate-negro.png"
           }
         ]
       },
@@ -1453,22 +1477,18 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "Lincoln",
+            "imagen": "logo-lincoln.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "lincoln-regular",
+            "imagen": "lincoln-regular.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "lincoln-chocolate",
+            "imagen": "lincoln-chocolate.png"
           }
         ]
       },
@@ -1568,8 +1588,8 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "Oreo",
+            "imagen": "logo-oreo.png"
           }
         ],
         "producto": [
@@ -1669,6 +1689,10 @@
           {
             "nombre": "Milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
           }
         ],
         "producto": [
@@ -1677,12 +1701,16 @@
             "imagen": "oreo-regular.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
+            "nombre": "oreo-mini",
+            "imagen": "oreo-mini.png"
           },
           {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "milka-oreo-bis",
+            "imagen": "milka-oreo-bis.png"
+          },
+          {
+            "nombre": "milka-oreo-pause",
+            "imagen": "milka-oreo-pause.png"
           }
         ]
       },
@@ -1750,6 +1778,10 @@
           {
             "nombre": "Milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
           }
         ],
         "producto": [
@@ -1764,6 +1796,14 @@
           {
             "nombre": "oreo-frutilla",
             "imagen": "oreo-frutilla.png"
+          },
+          {
+            "nombre": "milka-chocolate-blanco",
+            "imagen": "milka-chocolate-blanco.png"
+          },
+          {
+            "nombre": "milka-chocolate-negro",
+            "imagen": "milka-chocolate-negro.png"
           }
         ]
       },
@@ -1859,8 +1899,12 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "royal",
+            "imagen": "logo-royal.png"
           }
         ],
         "producto": [
@@ -1875,6 +1919,10 @@
           {
             "nombre": "oreo-frutilla",
             "imagen": "oreo-frutilla.png"
+          },
+          {
+            "nombre": "royal-bizcochuelo",
+            "imagen": "royal-bizcochuelo.png"
           }
         ]
       },
@@ -1930,22 +1978,14 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "royal",
+            "imagen": "logo-royal.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
-          },
-          {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "royal-postre",
+            "imagen": "royal-postre.png"
           }
         ]
       },
@@ -2011,7 +2051,11 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "milka",
             "imagen": "logo-milka.png"
           }
         ],
@@ -2027,6 +2071,10 @@
           {
             "nombre": "oreo-frutilla",
             "imagen": "oreo-frutilla.png"
+          },
+          {
+            "nombre": "milka-chocolate-blanco",
+            "imagen": "milka-chocolate-blanco.png"
           }
         ]
       },
@@ -2116,8 +2164,16 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "royal",
+            "imagen": "logo-royal.png"
+          },
+          {
+            "nombre": "cadbury",
+            "imagen": "logo-cadbury.png"
           }
         ],
         "producto": [
@@ -2132,6 +2188,14 @@
           {
             "nombre": "oreo-frutilla",
             "imagen": "oreo-frutilla.png"
+          },
+          {
+            "nombre": "cadbury-3-suenos",
+            "imagen": "cadbury-3-suenos.png"
+          },
+          {
+            "nombre": "royal-bizcochuelo",
+            "imagen": "royal-bizcochuelo.png"
           }
         ]
       },
@@ -2209,22 +2273,22 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "royal",
+            "imagen": "logo-royal.png"
+          },
+          {
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "oreo-mini",
+            "imagen": "oreo-mini.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "royal-bizcochuelo",
+            "imagen": "royal-bizcochuelo.png"
           }
         ]
       },
@@ -2284,22 +2348,22 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "cadbury",
+            "imagen": "logo-cadbury.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "oreo-golden",
+            "imagen": "oreo-golden.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "cadbury-frutilla",
+            "imagen": "cadbury-frutilla.png"
           }
         ]
       },
@@ -2382,7 +2446,11 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "milka",
             "imagen": "logo-milka.png"
           }
         ],
@@ -2398,6 +2466,10 @@
           {
             "nombre": "oreo-frutilla",
             "imagen": "oreo-frutilla.png"
+          },
+          {
+            "nombre": "milka-chocolate-blanco",
+            "imagen": "milka-chocolate-blanco.png"
           }
         ]
       },
@@ -2482,20 +2554,28 @@
           {
             "nombre": "Milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "lincoln",
+            "imagen": "logo-lincoln.png"
+          },
+          {
+            "nombre": "royal",
+            "imagen": "logo-royal.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "lincoln-regular",
+            "imagen": "lincoln-regular.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
+            "nombre": "royal-postre",
+            "imagen": "royal-postre.png"
           },
           {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "milka-chocolate-blanco",
+            "imagen": "milka-chocolate-blanco.png"
           }
         ]
       },
@@ -2575,20 +2655,20 @@
           {
             "nombre": "Milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "lincoln",
+            "imagen": "logo-lincoln.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "lincoln-regular",
+            "imagen": "lincoln-regular.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "milka-oreo",
+            "imagen": "milka-oreo.png"
           }
         ]
       },
@@ -2661,22 +2741,22 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
-            "imagen": "logo-milka.png"
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
+          },
+          {
+            "nombre": "cadbury",
+            "imagen": "logo-cadbury.png"
           }
         ],
         "producto": [
           {
-            "nombre": "oreo-regular",
-            "imagen": "oreo-regular.png"
+            "nombre": "oreo-mini",
+            "imagen": "oreo-mini.png"
           },
           {
-            "nombre": "oreo-chocolate",
-            "imagen": "oreo-chocolate.png"
-          },
-          {
-            "nombre": "oreo-frutilla",
-            "imagen": "oreo-frutilla.png"
+            "nombre": "cadbury-frutilla",
+            "imagen": "cadbury-frutilla.png"
           }
         ]
       },
@@ -2764,8 +2844,12 @@
       "imagenes": {
         "marca": [
           {
-            "nombre": "Milka",
+            "nombre": "milka",
             "imagen": "logo-milka.png"
+          },
+          {
+            "nombre": "oreo",
+            "imagen": "logo-oreo.png"
           }
         ],
         "producto": [
@@ -2780,6 +2864,10 @@
           {
             "nombre": "oreo-frutilla",
             "imagen": "oreo-frutilla.png"
+          },
+          {
+            "nombre": "milka-chocolate-blanco",
+            "imagen": "milka-chocolate-blanco.png"
           }
         ]
       },
