@@ -43,18 +43,20 @@ export class DetalleComponent implements OnInit {
   }
 
   loadDetalle() {
-    this.activatedRoute.params.pipe(map(({ titulo }) => titulo)).subscribe({
-      next: (value) => {
-        this.titleService.setTitle(`Recetas ${value}`);
-        this.producto = this.detalleService.getProductos(value);
-      },
-      error: (err) => {},
-      complete: () => {
-        console.log('aca');
-      },
-    });
-    setInterval(() => {
-      this.load = true;
-    }, 1000);
+    this.activatedRoute.params
+      .pipe(
+        map(({ titulo }) => titulo),
+        take(1)
+      )
+      .subscribe({
+        next: (value) => {
+          this.titleService.setTitle(`Recetas ${value}`);
+          this.producto = this.detalleService.getProductos(value);
+        },
+        error: (err) => {},
+        complete: () => {
+          this.load = true;
+        },
+      });
   }
 }
