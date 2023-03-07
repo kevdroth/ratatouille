@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RecetaRoutingModule } from './receta-routing.module';
 import { RecetaComponent } from './receta.component';
 import { SharedModule } from '../shared/shared.module';
+import { SwiperModule } from 'swiper/angular'
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     RecetaRoutingModule,
-    SharedModule
+    SharedModule,
+    SwiperModule
   ]
 })
 export class RecetaModule { }

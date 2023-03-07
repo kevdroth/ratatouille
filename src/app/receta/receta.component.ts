@@ -1,9 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map, filter, Subscription, take } from 'rxjs';
 import { Data, Recetas } from 'src/interfaces/recetas.interface';
 import { RecetaService } from './service/receta.service';
 import { Title } from '@angular/platform-browser';
+import SwiperCore, { Swiper, Virtual } from 'swiper';
+import { SwiperComponent } from 'swiper/angular';
+
+// install Swiper modules
+SwiperCore.use([Virtual]);
 
 @Component({
   selector: 'app-receta',
@@ -22,6 +27,11 @@ export class RecetaComponent implements OnInit {
     private titleService: Title
   ) {}
 
+  swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 100,
+  });
+
   ngOnInit(): void {
     this.routeSub$ = this.activatedRoute.params
       .pipe(
@@ -33,6 +43,8 @@ export class RecetaComponent implements OnInit {
       .subscribe({
         next: (value) => {
           this.receta = this.recetaService.getReceta(value);
+          console.log("🚀 ~ this.receta:", this.receta)
+
           this.recetaService
             .getReceta(value)
             .map((f) => f.titulo)

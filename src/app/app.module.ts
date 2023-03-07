@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     NoopAnimationsModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [SharedModule],
   providers: [],

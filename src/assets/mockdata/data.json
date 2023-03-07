@@ -1043,6 +1043,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack2.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -1108,6 +1130,28 @@
           {
             "producto": "de manteca",
             "cantidad": "50g"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -1201,6 +1245,28 @@
           {
             "producto": "de dulce de leche repostero",
             "cantidad": "100 g"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -1301,6 +1367,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack5.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -1359,6 +1447,28 @@
           {
             "producto": "de harina",
             "cantidad": "50 g"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -1455,6 +1565,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack7.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -1532,6 +1664,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack8.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -1588,6 +1742,28 @@
           {
             "producto": "de dulce de leche repostero",
             "cantidad": "400 g"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -1680,6 +1856,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack10.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -1726,6 +1924,28 @@
           {
             "producto": "de az\u00facar",
             "cantidad": "80 g"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -1785,6 +2005,28 @@
           {
             "producto": "de leche condensada",
             "cantidad": "400 ml"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -1871,6 +2113,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack13.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -1942,6 +2206,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack14.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -1992,6 +2278,28 @@
           {
             "producto": "de frutillas",
             "cantidad": "200 g"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -2071,6 +2379,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack17.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -2147,6 +2477,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack18.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -2218,6 +2570,28 @@
           }
         ]
       },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
+          }
+        ]
+      },
       "flotante2": "pack19.png",
       "flotante3": "brillo.png",
       "flotanteMascara": "mascara-fondo.png",
@@ -2281,6 +2655,28 @@
           {
             "producto": "de frutillas",
             "cantidad": "200 g"
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
@@ -2362,6 +2758,28 @@
           {
             "producto": "6 cucharadas de dulce de leche",
             "cantidad": ""
+          }
+        ]
+      },
+      "imagenes": {
+        "marca": [
+          {
+            "nombre": "Milka",
+            "imagen": "logo-milka.png"
+          }
+        ],
+        "producto": [
+          {
+            "nombre": "oreo-regular",
+            "imagen": "oreo-regular.png"
+          },
+          {
+            "nombre": "oreo-chocolate",
+            "imagen": "oreo-chocolate.png"
+          },
+          {
+            "nombre": "oreo-frutilla",
+            "imagen": "oreo-frutilla.png"
           }
         ]
       },
