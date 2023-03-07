@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { map, filter } from 'rxjs';
+import { map, filter, Subscription, take } from 'rxjs';
 import { Data, Recetas } from 'src/interfaces/recetas.interface';
 import { RecetaService } from './service/receta.service';
 import { Title } from '@angular/platform-browser';
@@ -13,6 +13,7 @@ import { Title } from '@angular/platform-browser';
 export class RecetaComponent implements OnInit {
   receta: any;
   load: boolean = false;
+  private routeSub$!: Subscription;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -22,11 +23,12 @@ export class RecetaComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.activatedRoute.params
+    this.routeSub$ = this.activatedRoute.params
       .pipe(
         map(({ idReceta }) => {
           return idReceta;
-        })
+        }),
+        take(1)
       )
       .subscribe({
         next: (value) => {
@@ -39,11 +41,13 @@ export class RecetaComponent implements OnInit {
                 m.text1 + ' ' + m.marca1 + ' ' + m.text2 + ' ' + m.marca2;
               this.titleService.setTitle(titulo);
             });
-          this.load = true;
         },
         error: (err) => console.log(err),
         complete: () => {
+          this.load = true;
+          
           console.log('aca');
+          console.log("🚀 ~ this.load:", this.load)
         },
       });
   }
@@ -52,5 +56,8 @@ export class RecetaComponent implements OnInit {
     window.history.back();
   }
 
-  ngOnDestroy(): void {}
+  ngOnDestroy(): void {
+    this.routeSub$.unsubscribe();
+    console.log('rompi');
+  }
 }

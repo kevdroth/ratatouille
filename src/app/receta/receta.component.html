@@ -1,5 +1,5 @@
-<ng-container *ngIf="receta; else noData">
-    <ng-container *ngIf="load; else loader">
+<ng-container *ngIf="load; else loader">
+        <ng-container *ngIf="receta; else noData">
         <div class="max-w-6xl md:pt-28 mx-auto" *ngFor="let r of receta">
             <div class="grid grid-cols-12 mx-auto">
                 <div class="col-span-12 sm:col-span-6 mx-auto w-full sm:w-auto self-start my-5" data-aos-duration="700"
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="mt-12 lg:mt-20">
-                        <div class="col-span-12 my-5 mx-5 w-2/3 md:w-full">
+                        <div class="col-span-12 my-5 mx-5 w-2/3 md:w-auto">
                             <h1 class="text-secondary font-extrabold my-2">Ingredientes</h1>
                             <ul class="list-disc mx-5 text-gray-600">
                                 <li *ngFor="let p of r.ingredientes.propios"><span
