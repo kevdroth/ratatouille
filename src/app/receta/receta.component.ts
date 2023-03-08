@@ -1,14 +1,12 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { map, filter, Subscription, take } from 'rxjs';
-import { Data, Recetas } from 'src/interfaces/recetas.interface';
+import { map, Subscription, take } from 'rxjs';
 import { RecetaService } from './service/receta.service';
 import { Title } from '@angular/platform-browser';
-import SwiperCore, { Swiper, Virtual } from 'swiper';
-import { SwiperComponent } from 'swiper/angular';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Swiper } from 'swiper';
 
 // install Swiper modules
-SwiperCore.use([Virtual]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 @Component({
   selector: 'app-receta',
@@ -27,10 +25,18 @@ export class RecetaComponent implements OnInit {
     private titleService: Title
   ) {}
 
-  swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-  });
+  config: any = {
+    slidesPerView: 1,
+    loop: true,
+    speed: 5000,
+    spaceBetween: 8,
+    pagination: false,
+    navigation: false,
+    scrollbar: false,
+    autoplay: {
+      delay: 1
+    }
+  };
 
   ngOnInit(): void {
     this.routeSub$ = this.activatedRoute.params

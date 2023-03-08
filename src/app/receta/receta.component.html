@@ -15,7 +15,7 @@
                         </video>
                     </div>
                 </div>
-                <div class="col-span-12 sm:col-span-6 mx-auto my-5" data-aos-duration="700" data-aos="fade-left">
+                <div class="col-span-12 sm:col-span-6 mx-auto mt-5" data-aos-duration="700" data-aos="fade-left">
                     <div class="grid grid-cols-12 mx-5">
                         <div class="col-span-12 w-full text-center">
                             <h1 class="text-primary text-4xl lg:text-5xl">{{r.titulo.text1}} <span
@@ -26,12 +26,14 @@
                             <h1 class="text-primary text-xl lg:text-2xl">{{r.titulo.text2}} <span
                                     class="font-extrabold">{{r.titulo.marca2}}</span>
                             </h1>
-                            <div class="col-auto w-full justify-items-center mt-5" *ngFor="let m of r.imagenes.marca">
-                                <img [src]="'assets/images/' + m.imagen" alt="" class="h-14 w-auto mx-auto">
+                            <div class="col-auto w-full space-x-8 justify-items-center mt-10 inline-flex place-content-center">
+                                <div *ngFor="let m of r.imagenes.marca">
+                                    <img [src]="'assets/images/' + m.imagen" alt="" class="h-14 w-auto mx-auto">
+                                </div>
                             </div>
-                            <div class="col-span-12 w-full mt-3">
-                                <swiper #swiper [virtual]="true" [autoplay]="true" [loop]="true" *ngFor="let p of r.imagenes.producto">
-                                    <ng-template swiperSlide>
+                            <div class="col-span-12 w-40 mx-auto mt-3 mb-5">
+                                <swiper #swiper [config]="config">
+                                    <ng-template swiperSlide *ngFor="let p of r.imagenes.producto">
                                         <img [src]="'assets/images/'+p.imagen" alt="" class="h-14 w-auto mx-auto">
                                     </ng-template>
                                 </swiper>
@@ -54,9 +56,9 @@
                                 <li *ngFor="let n of r.ingredientes.noPropios">{{n.cantidad}} {{n.producto}}</li>
                             </ul>
                         </div>
-                        <div class="w-full my-3" *ngIf="r.preparacion">
+                        <!-- <div class="w-full my-3" *ngIf="r.preparacion">
                             <img src="assets/images/divide.png" alt="" class="mx-auto">
-                        </div>
+                        </div> -->
                         <div class="col-span-12 my-5 mx-5" *ngIf="r.preparacion">
                             <h1 class="text-secondary font-extrabold my-2">Preparación</h1>
                             <ul class="list-disc mx-5 text-gray-600">
