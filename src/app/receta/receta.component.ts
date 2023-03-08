@@ -16,7 +16,6 @@ SwiperCore.use([Autoplay, FreeMode]);
 export class RecetaComponent implements OnInit {
   receta!: any;
   load: boolean = false;
-  private routeSub$!: Subscription;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -39,7 +38,7 @@ export class RecetaComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    this.routeSub$ = this.activatedRoute.params
+    this.activatedRoute.params
       .pipe(
         map(({ idReceta }) => {
           return idReceta;
@@ -57,8 +56,7 @@ export class RecetaComponent implements OnInit {
                 m.text1 + ' ' + m.marca1 + ' ' + m.text2 + ' ' + m.marca2;
               this.titleService.setTitle(titulo);
               this.config.slidesPerView = this.receta[0].imagenes.producto.length > 1 ? 2 : 1
-              console.log("🚀 ~ this.receta.imagenes.producto.length:", this.receta[0].imagenes.producto.length)
-
+              this.config.loop = this.receta[0].imagenes.producto.length > 1 ? true : false
             });
         },
         error: (err) => console.log(err),
@@ -73,8 +71,4 @@ export class RecetaComponent implements OnInit {
     window.history.back();
   }
 
-  ngOnDestroy(): void {
-    this.routeSub$.unsubscribe();
-    console.log('rompi');
-  }
 }

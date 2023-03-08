@@ -1972,6 +1972,28 @@
         "text2": "con Chantillí y pasta de maní",
         "marca2": ""
       },
+      "preparacion": [
+        {
+          "paso": "1",
+          "descripcion": "Preparar el postre Royal con la leche en el fuego.",
+          "receta_id": "11"
+        },
+        {
+          "paso": "2",
+          "descripcion": "Llevar a la heladera 30 minutos.",
+          "receta_id": "11"
+        },
+        {
+          "paso": "3",
+          "descripcion": "Batir la crema con el azúcar y la esencia hasta que quede firme.",
+          "receta_id": "11"
+        },
+        {
+          "paso": "4",
+          "descripcion": "Armar las copitas intercalando ambos rellenos.",
+          "receta_id": "11"
+        }
+      ],
       "ingredientes": {
         "propios": [
           {
