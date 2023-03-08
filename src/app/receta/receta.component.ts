@@ -14,7 +14,7 @@ SwiperCore.use([Autoplay, FreeMode]);
   styleUrls: ['./receta.component.scss'],
 })
 export class RecetaComponent implements OnInit {
-  receta: any;
+  receta!: any;
   load: boolean = false;
   private routeSub$!: Subscription;
 
@@ -56,11 +56,15 @@ export class RecetaComponent implements OnInit {
               let titulo =
                 m.text1 + ' ' + m.marca1 + ' ' + m.text2 + ' ' + m.marca2;
               this.titleService.setTitle(titulo);
+              this.config.slidesPerView = this.receta[0].imagenes.producto.length > 1 ? 2 : 1
+              console.log("🚀 ~ this.receta.imagenes.producto.length:", this.receta[0].imagenes.producto.length)
+
             });
         },
         error: (err) => console.log(err),
         complete: () => {
           this.load = true;
+          console.log(this.receta)
         },
       });
   }

@@ -1432,6 +1432,33 @@
         "text2": "",
         "marca2": ""
       },
+      "preparacion": [
+        {
+          "paso": "1",
+          "descripcion": "Triturar las galletitas, agregar la manteca derretida y poner en la base de aritos de 8 cm de diámetro (puede ser de 24, 28 o 30 va a cambiar la altura).",
+          "receta_id": "6"
+        },
+        {
+          "paso": "2",
+          "descripcion": "Batir (puede ser a mano) el queso crema con el azúcar, la crema de leche, los huevos, y la leche y un chorrito de esencia de vainilla.",
+          "receta_id": "6"
+        },
+        {
+          "paso": "3",
+          "descripcion": "Agregar la harina y mezclar bien.",
+          "receta_id": "6"
+        },
+        {
+          "paso": "4",
+          "descripcion": "Llevar a horno mínimo, 150 grados durante una hora. O en horno fuerte por media hora y dejar otra media hora con el horno apagado.",
+          "receta_id": "6"
+        },
+        {
+          "paso": "5",
+          "descripcion": "Llevar a la heladera una hora, desmoldar y decorar.",
+          "receta_id": "6"
+        }
+      ],
       "ingredientes": {
         "propios": [
           {

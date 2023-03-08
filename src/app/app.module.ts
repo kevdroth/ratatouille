@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { QuicklinkModule, QuicklinkStrategy } from 'ngx-quicklink';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,8 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
     NoopAnimationsModule,
     HttpClientModule,
     SharedModule,
+    QuicklinkModule
   ],
-  exports: [SharedModule],
+  exports: [SharedModule, QuicklinkModule],
   providers: [],
   bootstrap: [AppComponent],
 })
