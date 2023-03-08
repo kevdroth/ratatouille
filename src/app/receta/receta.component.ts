@@ -3,11 +3,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { map, Subscription, take, delay } from 'rxjs';
 import { RecetaService } from './service/receta.service';
 import { Title } from '@angular/platform-browser';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Swiper, FreeMode, EffectFade } from 'swiper';
-import fadeEffect from 'swiper';
+import SwiperCore, { Autoplay, FreeMode } from 'swiper';
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode, EffectFade]);
+SwiperCore.use([Autoplay, FreeMode]);
 
 @Component({
   selector: 'app-receta',
@@ -27,16 +26,16 @@ export class RecetaComponent implements OnInit {
   ) {}
 
   config: any = {
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     loop: true,
+    freeMode: true,
     speed: 2000,
     spaceBetween: 1,
-    pagination: false,
-    navigation: false,
-    scrollbar: false,
     autoplay: {
-      delay: 1
-    }
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    centerInsufficientSlides: true
   };
 
   ngOnInit(): void {
@@ -50,8 +49,6 @@ export class RecetaComponent implements OnInit {
       .subscribe({
         next: (value) => {
           this.receta = this.recetaService.getReceta(value);
-          console.log("🚀 ~ this.receta:", this.receta)
-
           this.recetaService
             .getReceta(value)
             .map((f) => f.titulo)
