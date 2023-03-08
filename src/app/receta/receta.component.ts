@@ -3,10 +3,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { map, Subscription, take, delay } from 'rxjs';
 import { RecetaService } from './service/receta.service';
 import { Title } from '@angular/platform-browser';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Swiper, FreeMode } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Swiper, FreeMode, EffectFade } from 'swiper';
+import fadeEffect from 'swiper';
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode, EffectFade]);
 
 @Component({
   selector: 'app-receta',
