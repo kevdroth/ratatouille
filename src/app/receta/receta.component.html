@@ -31,13 +31,13 @@
                                     <img [src]="'assets/images/' + m.imagen" alt="" class="h-14 w-auto mx-auto">
                                 </div>
                             </div>
-                            <div class="col-span-12 w-40 mx-auto mt-3 mb-5">
-                                <swiper #swiper [config]="config">
-                                    <ng-template swiperSlide *ngFor="let p of r.imagenes.producto">
-                                        <img [src]="'assets/images/'+p.imagen" alt="" class="h-14 w-auto mx-auto">
-                                    </ng-template>
-                                </swiper>
-                            </div>
+                        </div>
+                        <div class="col-span-4 col-start-5 mt-3 mb-5 ">
+                            <swiper #swiper [config]="config">
+                                <ng-template swiperSlide *ngFor="let p of r.imagenes.producto">
+                                    <img [src]="'assets/images/'+p.imagen" alt="" class="w-auto mx-auto h-14 ">
+                                </ng-template>
+                            </swiper>
                         </div>
                         <!-- <div class="col-span-4 w-full relative top-5">
                             <img [src]="'assets/images/'+r.flotante2"

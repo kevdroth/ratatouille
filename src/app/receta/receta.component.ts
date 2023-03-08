@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { map, Subscription, take } from 'rxjs';
+import { map, Subscription, take, delay } from 'rxjs';
 import { RecetaService } from './service/receta.service';
 import { Title } from '@angular/platform-browser';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Swiper } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Swiper, FreeMode } from 'swiper';
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode]);
 
 @Component({
   selector: 'app-receta',
@@ -26,10 +26,10 @@ export class RecetaComponent implements OnInit {
   ) {}
 
   config: any = {
-    slidesPerView: 1,
+    slidesPerView: 1.5,
     loop: true,
-    speed: 5000,
-    spaceBetween: 8,
+    speed: 2000,
+    spaceBetween: 1,
     pagination: false,
     navigation: false,
     scrollbar: false,
