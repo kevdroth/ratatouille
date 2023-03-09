@@ -1,9 +1,9 @@
 <ng-container *ngIf="load; else loader">
     <ng-container *ngIf="receta; else noData">
         <div class="max-w-7xl sm:pt-16 md:pt-28 mx-auto" *ngFor="let r of receta">
-            <div class="grid grid-cols-12 mx-auto">
-                <div class="col-span-12 sm:col-span-6 mx-auto w-full sm:w-auto self-start my-5" data-aos-duration="700"
-                    data-aos="fade-right">
+            <div class="grid grid-cols-12 mx-auto sm:mt-5">
+                <div class="col-span-12 sm:col-span-6 mx-auto w-full sm:w-auto self-start" data-aos-duration="700"
+                data-aos="fade-up">
                     <div class="sm:h-[750px] w-full rounded-xl overflow-hidden relative top-0 left-0 shadow-xl">
                         <img [src]="r.imgReceta?.length ? 'assets/images/' + r.imgReceta + '.jpg' : 'assets/images/default.svg'"
                             class="rounded-xl object-center object-cover hover:hidden h-full w-full mx-auto" alt=""
@@ -15,8 +15,8 @@
                         </video>
                     </div>
                 </div>
-                <div class="col-span-12 sm:col-span-6 mx-auto mt-5" data-aos-duration="700" data-aos="fade-left">
-                    <div class="grid grid-cols-12 mx-5">
+                <div class="col-span-12 sm:col-span-6 mx-auto mt-5 sm:mt-0" data-aos-duration="700" data-aos="fade-up">
+                    <div class="grid grid-cols-12 mx-8">
                         <div class="col-span-12 w-full text-center">
                             <h1 class="text-primary text-4xl lg:text-5xl">{{r.titulo.text1}} <span
                                     class="font-extrabold">{{r.titulo.marca1}}</span></h1>
@@ -33,7 +33,7 @@
                                 <img [src]="'assets/images/' + m.imagen" alt="" class="h-14 w-auto mx-auto object-contain">
                             </div>
                         </div>
-                        <div class="col-span-12 my-5 w-1/2 place-self-center">
+                        <div class="col-span-12 w-1/2 place-self-center">
                             <swiper #swiper [config]="config">
                                 <ng-template swiperSlide *ngFor="let p of r.imagenes.producto">
                                     <img [src]="'assets/images/'+p.imagen" alt=""
@@ -42,7 +42,7 @@
                             </swiper>
                         </div>
                     </div>
-                    <div class="col-span-12 my-10 mx-5">
+                    <div class="col-span-12 md:my-10 my-3 mx-5">
                         <div class="grid grid-cols-12 mx-auto">
                             <div class="col-span-12">
                                 <h1 class="text-secondary font-extrabold my-2 text-2xl">INGREDIENTES</h1>

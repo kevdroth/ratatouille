@@ -14,18 +14,29 @@ export class HomeComponent implements OnInit, AfterViewInit {
   marca: Marcas[] = [];
   load = new BehaviorSubject<boolean>(false);
 
-  constructor(private router: Router, private service: AppService, private titleService: Title) {}
+  constructor(
+    private router: Router,
+    private service: AppService,
+    private titleService: Title
+  ) {}
 
   ngOnInit(): void {
-    console.log(this.load.value)
+    console.log(this.load.value);
     this.titleService.setTitle('Home');
-    this.marca = this.service.products().marcas;
+    this.marca = this.service
+      .products()
+      .marcas
+      // .filter(
+      //   (f) =>
+      //     f.nombre.toLowerCase().includes('oreo') ||
+      //     f.nombre.toLowerCase().includes('lincoln')
+      // );
   }
 
   ngAfterViewInit(): void {
     this.parallax();
-    this.load.next(true)
-    console.log(this.load.value)
+    this.load.next(true);
+    console.log(this.load.value);
   }
 
   parallax() {
@@ -82,9 +93,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
       if (value < 300) {
         sec!.style.bottom = value * 2 + 'px';
       }
-
-      
     });
-
   }
 }
