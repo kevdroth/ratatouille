@@ -10,13 +10,20 @@ import { Marcas } from '../../../interfaces/recetas.interface';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  marca: Marcas[] = [];
+  marcaPrincipal: Marcas[] = [];
 
   constructor(public dialog: MatDialog, private service: AppService) {}
 
   ngOnInit(): void {
-    this.marca = this.service.products().marcas;
-  }
+    this.marcaPrincipal = this.service
+      .products()
+      .marcas.filter(
+        (f) =>
+          f.nombre.toLowerCase().includes('oreo') ||
+          f.nombre.toLowerCase().includes('lincoln')
+      );
+    console.log(this.marcaPrincipal);
+  }  
 
   openMenu() {
     const dialogRef = this.dialog.open(MenuDialogComponent, {

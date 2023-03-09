@@ -2,18 +2,18 @@
     <img src="assets/images/bg-home-removebg.png" alt="" class="absolute top-10 object-cover md:object-fill md:w-full h-24 mx-auto">
     <div class="pt-5 self-center inline-flex w-full">
         <div class="flex md:max-w-2xl place-content-center mx-auto w-full my-4 md:gap-x-10">
-            <div class=" z-50 place-self-center md:h-16 md:mt-2" *ngFor="let m of marca">
-                <a [href]="'detalle/'+m.slug" class="hidden md:block h-full">
-                    <img [src]="'assets/images/'+m.logo" alt="" class="h-12 object-contain hover:h-14 hover:mt-0">
+            <div class=" z-50 place-self-center h-16 mx-3" *ngFor="let m of marcaPrincipal">
+                <a [href]="'detalle/'+m.slug" class="h-full">
+                    <img [src]="'assets/images/'+m.logo" alt="" class="h-14 object-contain hover:h-16 hover:mt-0">
                 </a>
             </div>
-            <div class="md:hidden visible z-50 place-self-center mx-auto">
+            <!-- <div class="md:hidden visible z-50 place-self-center mx-auto">
                 <a [href]="'home'">
                     <img src="assets/images/logo.png" alt="" class="h-14">
                 </a>
-            </div>
+            </div> -->
         </div>
-        <div class="absolute self-center right-5 top-14 w-10 h-10 flex place-content-center">
+        <div class="absolute self-center right-5 top-10 w-10 h-10 flex place-content-center">
             <button data-collapse-toggle="navbar-hamburger" mat-button (click)="openMenu()" type="button"
                 data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
                 aria-controls="drawer-navigation">
