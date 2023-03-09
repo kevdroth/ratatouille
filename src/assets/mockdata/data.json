@@ -1009,6 +1009,38 @@
         "text2": "con",
         "marca2": "Milka Blanco"
       },
+      "preparacion": [
+        {
+          "paso": "1",
+          "descripcion": "Mezclar los huevos con la leche, agregar el polvo y revolver unos minutos.",
+          "receta_id": "2"
+        },
+        {
+          "paso": "2",
+          "descripcion": "Poner en un molde de 24 cm de diámetro previamente enmantecado.",
+          "receta_id": "2"
+        },
+        {
+          "paso": "3",
+          "descripcion": "Llevar a horno minimo 40 minutos.",
+          "receta_id": "2"
+        },
+        {
+          "paso": "4",
+          "descripcion": "Batir con batidora eléctrica la pasta de mani y un chorrito de esencia de vainilla hasta que queda firme.",
+          "receta_id": "2"
+        },
+        {
+          "paso": "5",
+          "descripcion": "Cortar el bizcochuelo al medio y rellenar con la crema.",
+          "receta_id": "2"
+        },
+        {
+          "paso": "6",
+          "descripcion": "Derretir el chocolate blanco en el microondas y cubrir por arriba.",
+          "receta_id": "2"
+        }
+      ],
       "ingredientes": {
         "propios": [
           {
