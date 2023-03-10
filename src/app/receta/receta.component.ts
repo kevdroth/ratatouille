@@ -55,14 +55,13 @@ export class RecetaComponent implements OnInit {
               let titulo =
                 m.text1 + ' ' + m.marca1 + ' ' + m.text2 + ' ' + m.marca2;
               this.titleService.setTitle(titulo);
-              this.config.slidesPerView = this.receta[0].imagenes.producto.length > 1 ? 2 : 1
+              this.config.slidesPerView = this.receta[0].imagenes.producto.length > 2 ? 2 : 1
               this.config.loop = this.receta[0].imagenes.producto.length > 1 ? true : false
             });
         },
         error: (err) => console.log(err),
         complete: () => {
           this.load = true;
-          console.log(this.receta)
         },
       });
   }

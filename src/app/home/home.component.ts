@@ -3,6 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { BehaviorSubject, delay, Observable, Subject } from 'rxjs';
 import { Marcas } from 'src/interfaces/recetas.interface';
+import { Parallax } from 'swiper';
 import { AppService } from '../services/app.service';
 
 @Component({
@@ -12,7 +13,7 @@ import { AppService } from '../services/app.service';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   marca: Marcas[] = [];
-  load = new BehaviorSubject<boolean>(false);
+  load: boolean = true;
 
   constructor(
     private router: Router,
@@ -21,25 +22,21 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit(): void {
-    console.log(this.load.value);
     this.titleService.setTitle('Home');
-    this.marca = this.service
-      .products()
-      .marcas
-      // .filter(
-      //   (f) =>
-      //     f.nombre.toLowerCase().includes('oreo') ||
-      //     f.nombre.toLowerCase().includes('lincoln')
-      // );
+    this.marca = this.service.products().marcas;
+    // .filter(
+    //   (f) =>
+    //     f.nombre.toLowerCase().includes('oreo') ||
+    //     f.nombre.toLowerCase().includes('lincoln')
+    // );
+    
   }
 
   ngAfterViewInit(): void {
-    this.parallax();
-    this.load.next(true);
-    console.log(this.load.value);
+    this.parallax()
   }
 
-  parallax() {
+  parallax(){
     let oreo = document.getElementById('oreo');
     let condimento = document.getElementById('condimento');
     let platoTorta = document.getElementById('platoTorta');

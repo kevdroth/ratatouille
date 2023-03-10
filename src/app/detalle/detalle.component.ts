@@ -56,7 +56,7 @@ export class DetalleComponent implements OnInit {
         },
         error: (err) => {},
         complete: () => {
-          this.load = true;
+          this.load = true
         },
       });
   }

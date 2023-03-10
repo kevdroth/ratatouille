@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 import * as Aos from 'aos';
 import { environment } from 'src/environment/environment.prod';
 import { NavigationEnd, Router } from '@angular/router';
@@ -13,7 +13,7 @@ declare var gtag: Function;
 })
 export class AppComponent implements OnInit {
   private _googleAnalyticsId: string = environment.googleAnalyticsId;
-  load!: boolean
+  load: boolean = false;
 
   constructor(private router: Router, private titleService: Title) {
     Aos.init({
@@ -22,11 +22,9 @@ export class AppComponent implements OnInit {
       easing: 'ease-in-sine',
       delay: 0,
     });
-
   }
-  
+
   ngOnInit(): void {
-    this.load = false
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         gtag('config', this._googleAnalyticsId, {
@@ -35,14 +33,10 @@ export class AppComponent implements OnInit {
       }
     });
 
-    console.log("🚀 ~ document.readyState:", document)
     document.addEventListener('readystatechange', () => {
       if (document.readyState === 'complete') {
-
-        this.load = true
-        console.log('¡Todo cargado!');
+        this.load = true;
       }
     });
-
   }
 }

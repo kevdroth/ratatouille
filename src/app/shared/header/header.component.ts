@@ -22,7 +22,6 @@ export class HeaderComponent implements OnInit {
           f.nombre.toLowerCase().includes('oreo') ||
           f.nombre.toLowerCase().includes('lincoln')
       );
-    console.log(this.marcaPrincipal);
   }  
 
   openMenu() {

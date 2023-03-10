@@ -33,7 +33,7 @@
                                 <img [src]="'assets/images/' + m.imagen" alt="" class="h-14 w-auto mx-auto object-contain">
                             </div>
                         </div>
-                        <div class="col-span-12 w-1/2 place-self-center">
+                        <div class="col-span-12 w-1/2 place-self-center mt-3">
                             <swiper #swiper [config]="config">
                                 <ng-template swiperSlide *ngFor="let p of r.imagenes.producto">
                                     <img [src]="'assets/images/'+p.imagen" alt=""
