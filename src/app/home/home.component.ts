@@ -51,40 +51,40 @@ export class HomeComponent implements OnInit, AfterViewInit {
     window.addEventListener('scroll', function () {
       let value = this.window.scrollY;
 
-      if (value <= 240) {
-        chocoBarra!.style.right = value * 0.6 + 'px';
+      if (value <= 1700) {
+        chocoBarra!.style.right = value * 0.1 + 'px';
       }
 
-      if (value <= 240) {
-        jarrito!.style.top = value * 0.2 + 'px';
+      if (value <= 1700) {
+        jarrito!.style.top = value * 0.04 + 'px';
       }
 
-      if (value < 240) {
-        condimento!.style.top = value * 0.4 + 'px';
+      if (value < 1700) {
+        condimento!.style.top = value * 0.08 + 'px';
       }
 
-      if (value < 240) {
-        platoTorta!.style.top = value * 0.65 + 'px';
+      if (value < 1700) {
+        platoTorta!.style.top = value * 0.1 + 'px';
       }
 
-      if (value < 240) {
-        frutosSecos!.style.left = value * 0.6 + 'px';
+      if (value < 1700) {
+        frutosSecos!.style.left = value * 0.09 + 'px';
       }
 
-      if (value < 240) {
-        platoGalletas!.style.bottom = value * 1.1 + 'px';
+      if (value < 1700) {
+        platoGalletas!.style.bottom = value * 0.2 + 'px';
       }
 
-      if (value < 240) {
-        cuchara!.style.bottom = value * 0.8 + 'px';
+      if (value < 1700) {
+        cuchara!.style.bottom = value * 0.14 + 'px';
       }
 
-      if (value < 240) {
-        oreo!.style.top = value * 0.8 + 'px';
+      if (value < 1700) {
+        oreo!.style.top = value * 0.1 + 'px';
       }
 
-      if (value < 240) {
-        lincoln!.style.bottom = value * 1.2 + 'px';
+      if (value < 1700) {
+        lincoln!.style.bottom = value * 0.17 + 'px';
       }
 
       if (value < 240) {
