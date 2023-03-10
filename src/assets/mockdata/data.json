@@ -1190,10 +1190,6 @@
             "imagen": "oreo-frutilla.png"
           },
           {
-            "nombre": "lincoln-chocolate",
-            "imagen": "lincoln-chocolate.png"
-          },
-          {
             "nombre": "lincoln-regular",
             "imagen": "lincoln-regular.png"
           }
@@ -1544,10 +1540,6 @@
           {
             "nombre": "lincoln-regular",
             "imagen": "lincoln-regular.png"
-          },
-          {
-            "nombre": "lincoln-chocolate",
-            "imagen": "lincoln-chocolate.png"
           }
         ]
       },
