@@ -1,5 +1,10 @@
 <app-header></app-header>
 <section class="min-h-[calc(100%-208px)]">
-<router-outlet quicklink></router-outlet>
+    <ng-container *ngIf="load; else loader">
+        <router-outlet></router-outlet>
+    </ng-container>
+    <ng-template #loader>
+        <div class="spinner fixed top-[40%] right-[50%] left-[50%]"></div>
+    </ng-template>
 </section>
 <app-footer></app-footer>
