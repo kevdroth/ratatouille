@@ -8,12 +8,27 @@ import { AppService } from '../../../../services/app.service';
   styleUrls: ['./menu-dialog.component.scss'],
 })
 export class MenuDialogComponent implements OnInit {
-  marca: Marcas[] = [];
+  marcaPrincipal: Marcas[] = [];
+  marcaSecundarias: Marcas[] = [];
   showMarcas: boolean = false;
+  showMarcasSecundarias: boolean = false;
 
   constructor(private service: AppService) {}
 
   ngOnInit(): void {
-    this.marca = this.service.products().marcas;
+    this.marcaPrincipal = this.service
+      .products()
+      .marcas.filter(
+        (f) =>
+          f.nombre.toLowerCase().includes('oreo') ||
+          f.nombre.toLowerCase().includes('lincoln')
+      );
+    this.marcaSecundarias = this.service
+      .products()
+      .marcas.filter(
+        (f) =>
+          !f.nombre.toLowerCase().includes('oreo') &&
+          !f.nombre.toLowerCase().includes!('lincoln')
+      );
   }
 }

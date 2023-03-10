@@ -1,8 +1,8 @@
 <div class="grid grid-cols-2 justify-items-center content-center overflow-y-hidden bg-third md:bg-white">
     <div class="absolute right-5 top-10 h-10 w-10 flex place-content-center">
         <button mat-button mat-dialog-close>
-            <svg class="md:fill-third fill-white hover:text-gray-400 h-8 w-8 hover:h-9 hover:w-9" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512">
+            <svg class="md:fill-third fill-white hover:text-gray-400 h-8 w-8 hover:h-9 hover:w-9"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
                     d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z" />
             </svg>
@@ -16,22 +16,40 @@
     <div
         class="md:bg-white bg-third px-5 w-full max-w-md md:text-gray-800 text-white col-span-2 md:col-span-1 h-screen flex flex-col items-start justify-center text-left space-y-8">
         <div class="flex justify-between w-full">
-            <a href="" class="text-5xl md:hover:text-primary hover:text-gray-400 transition-colors font-semibold">Recetas</a>
+            <a href=""
+                class="text-5xl md:hover:text-primary hover:text-gray-400 transition-colors font-semibold">Recetas</a>
             <button href="" class="text-3xl md:hover:text-primary transition-colors self-center hover:text-gray-400"
                 (click)="showMarcas = !showMarcas">{{showMarcas ? '-' : '+'}}</button>
         </div>
         <div *ngIf="showMarcas" class="w-full">
             <ul class="space-y-4">
-                <li *ngFor="let m of marca">
-                    <div class="h-16 w-28 my-2 flex flex-col justify-center">
+                <li *ngFor="let m of marcaPrincipal">
+                    <div class="h-16 w-28 my-2 inline-flex justify-center">
                         <a [href]="'detalle/'+m.slug">
                             <img [src]="'assets/images/'+m.logo" class="bg-cover bg-center mx-auto w-full" alt="">
                         </a>
                     </div>
                     <mat-divider class="bg-gray-300"></mat-divider>
                 </li>
+                <li [style.text-align]="showMarcasSecundarias ? 'end' : 'start'">
+                    <button href=""
+                        class="text-3xl md:hover:text-primary transition-colors self-center hover:text-gray-400"
+                        (click)="showMarcasSecundarias = !showMarcasSecundarias" >{{showMarcasSecundarias ? '-' : 'Más recetas'}}</button>
+                    </li>
+                    <div *ngIf="showMarcasSecundarias" class="w-full">
+                        <ul class="space-y-4">
+                            <li *ngFor="let m of marcaSecundarias">
+                                <div class="h-16 w-28 my-2 inline-flex justify-center">
+                                    <a [href]="'detalle/'+m.slug">
+                                        <img [src]="'assets/images/'+m.logo" class="bg-cover bg-center mx-auto w-full" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
             </ul>
         </div>
-        <a [href]="'registro'" class="text-5xl md:hover:text-primary transition-colors font-semibold hover:text-gray-400">Registrate</a>
+        <a [href]="'registro'"
+            class="text-5xl md:hover:text-primary transition-colors font-semibold hover:text-gray-400">Registrate</a>
     </div>
 </div>
