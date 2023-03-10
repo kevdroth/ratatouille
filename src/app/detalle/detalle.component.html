@@ -1,15 +1,14 @@
 <ng-container *ngIf="load; else loader">
-<ng-container *ngIf="producto; else noData">
+    <ng-container *ngIf="producto; else noData">
         <div class="max-w-6xl mt-28 mb-5 mx-auto" *ngFor="let m of producto.marcasFiltradas">
             <div class="grid grid-cols-12 gap-x-5 gap-y-8 mx-auto sm:mx-5">
-                <div class="col-span-12 mx-auto w-full" >
-                    <img [src]="'assets/images/'+ m.logo" class="w-auto mx-auto h-16 pb-3"
-                        alt="">
+                <div class="col-span-12 mx-auto w-full">
+                    <img [src]="'assets/images/'+ m.logo" class="w-auto mx-auto h-16 pb-3" alt="">
                     <div class="text-primary text-2xl text-center">
                         <h1>Recetas con <span class="font-extrabold">{{m.nombre}}</span> </h1>
                     </div>
                 </div>
-                <div class="col-span-12 mx-auto md:col-span-6 lg:col-span-4 w-[80%] md:w-full" 
+                <div class="col-span-12 mx-auto md:col-span-6 lg:col-span-4 w-[80%] md:w-full"
                     *ngFor="let p of producto.producto">
                     <div class="shadow-2xl" data-aos="zoom-in-up">
                         <div class="h-20 bg-gradient-to-tr from-primary to-[#458dc4] rounded-tl-2xl rounded-tr-2xl">
@@ -22,10 +21,19 @@
                             </div>
                         </div>
                         <div class="relative top-0 left-0 z-10 h-[550px] w-full mx-auto overflow-hidden">
+                            <!-- <button class="absolute top-3 right-3 sm:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play"
+                                    width="30" height="30" viewBox="0 0 24 24" stroke-width="3.5" stroke="#1463a7"
+                                    fill="#1463a7" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 4v16l13 -8z" />
+                                </svg>
+                            </button> -->
                             <img id="img" class="object-center object-cover hover:hidden h-full w-full mx-auto "
                                 [src]="p.imgReceta?.length ? 'assets/images/' + p.imgReceta + '.jpg' : 'assets/images/default.svg'"
                                 alt="">
-                            <video [muted]="'muted'" onmouseleave="pause()" onmouseover="play()" *ngIf="p.imgReceta"
+                            <video #videoPlayer [muted]="'muted'" onmouseleave="pause()" onmouseover="play()"
+                                *ngIf="p.imgReceta"
                                 class="hover:scale-[1.15] ease-in-out duration-1000 object-cover object-center w-full h-full bg-center absolute top-0 bottom-0 opacity-0 hover:opacity-100"
                                 loop id="videoPlayer"
                                 [src]="p.imgReceta?.length ? 'assets/videosDetalles/' + p.videoReceta : 'assets/images/default.svg'"
@@ -33,7 +41,7 @@
                             </video>
                             <div class="absolute grid grid-cols-12 gap-x-2 z-20 bottom-[-5px] left-0 w-full">
                                 <div class="col-span-6 rounded-tl-2xl h-10 hover:font-semibold hover:translate-y-[-5px] hover:ease-in-out hover:duration-[600ms] rounded-tr-2xl bg-secondary flex justify-center items-center text-white w-full
-                        mx-auto text-center">
+                                mx-auto text-center">
                                     <a [href]="'receta/'+p.idReceta">
                                         <h1 class="text-xs">Ir a la preparación</h1>
                                     </a>
@@ -45,17 +53,18 @@
                         <img src="assets/images/divide.png" alt="">
                     </div>
                 </div>
-                <div class="col-span-12 mx-auto text-primary text-xl md:text-2xl md:my-5 inline-flex items-center" *ngIf="m.redes">
-                        <h1 class="mr-2">Para conocer más seguinos en: </h1>
-                        <a [href]="m.redes" target="_blank">
-                            <div class="rounded-3xl h-12 w-12 bg-[#dd2a7b] flex justify-center items-center">
-                                <svg class="h-7 w-7 fill-white font-extrabold" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512">
-                                    <path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                                </svg>
-                            </div>
-                        </a>
+                <div class="col-span-12 mx-auto text-primary text-xl md:text-2xl md:my-5 inline-flex items-center"
+                    *ngIf="m.redes">
+                    <h1 class="mr-2">Para conocer más seguinos en: </h1>
+                    <a [href]="m.redes" target="_blank">
+                        <div class="rounded-3xl h-12 w-12 bg-[#dd2a7b] flex justify-center items-center">
+                            <svg class="h-7 w-7 fill-white font-extrabold" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
                 <app-scroll-to-top></app-scroll-to-top>
             </div>

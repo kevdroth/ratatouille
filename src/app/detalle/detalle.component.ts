@@ -4,6 +4,8 @@ import {
   Input,
   OnInit,
   ChangeDetectorRef,
+  ViewChild,
+  ElementRef,
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map, take, tap } from 'rxjs';
@@ -20,7 +22,6 @@ export class DetalleComponent implements OnInit {
   producto!: any;
   windowScrolled = false;
   load: boolean = false;
-  value: boolean = false;
 
   constructor(
     private detalleService: DetalleService,
@@ -59,4 +60,12 @@ export class DetalleComponent implements OnInit {
         },
       });
   }
+
+  @ViewChild('videoPlayer') videoplayer!: ElementRef;
+
+  playVideo() {
+    this.videoplayer.nativeElement.play();
+    console.log("🚀 ~ this.videoplayer.nativeElement.play():", this.videoplayer.nativeElement.play())
+}
+  
 }
