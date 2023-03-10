@@ -23,20 +23,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.titleService.setTitle('Home');
-    this.marca = this.service.products().marcas;
-    // .filter(
-    //   (f) =>
-    //     f.nombre.toLowerCase().includes('oreo') ||
-    //     f.nombre.toLowerCase().includes('lincoln')
-    // );
-    
+    this.marca = this.service
+      .products()
+      .marcas.filter(
+        (f) =>
+          f.nombre.toLowerCase().includes('oreo') ||
+          f.nombre.toLowerCase().includes('lincoln')
+      );
   }
 
   ngAfterViewInit(): void {
-    this.parallax()
+    this.parallax();
   }
 
-  parallax(){
+  parallax() {
     let oreo = document.getElementById('oreo');
     let condimento = document.getElementById('condimento');
     let platoTorta = document.getElementById('platoTorta');
@@ -87,8 +87,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
         lincoln!.style.bottom = value * 1.2 + 'px';
       }
 
-      if (value < 300) {
-        sec!.style.bottom = value * 2 + 'px';
+      if (value < 240) {
+        sec!.style.marginBottom = value * 2.5 + 'px';
       }
     });
   }
